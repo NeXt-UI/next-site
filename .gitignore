@@ -1,0 +1,16 @@
+# Maven
+target/
+
+# OpenDaylight
+yang-gen-sal/
+yang-gen-config/
+
+.idea/
+etc/
+node_modules/
+
+.DS_Store
+sandbox/
+node/
+!src/js/graphic/topology/node/
+

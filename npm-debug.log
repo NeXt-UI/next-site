@@ -1,0 +1,172 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'build/' ]
+2 info using npm@2.14.12
+3 info using node@v4.2.4
+4 verbose install initial load of /Developer/Project/web/htdoc/package.json
+5 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/contrib/package.json
+6 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt/package.json
+7 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-cli/package.json
+8 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib/package.json
+9 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-clean/package.json
+10 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-coffee/package.json
+11 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-compass/package.json
+12 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-compress/package.json
+13 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-concat/package.json
+14 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-connect/package.json
+15 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-copy/package.json
+16 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-csslint/package.json
+17 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-cssmin/package.json
+18 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-handlebars/package.json
+19 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-htmlmin/package.json
+20 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-imagemin/package.json
+21 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-jade/package.json
+22 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-jasmine/package.json
+23 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-jshint/package.json
+24 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-jst/package.json
+25 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-less/package.json
+26 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-nodeunit/package.json
+27 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-qunit/package.json
+28 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-requirejs/package.json
+29 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-sass/package.json
+30 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-stylus/package.json
+31 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-symlink/package.json
+32 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-uglify/package.json
+33 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-watch/package.json
+34 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-contrib-yuidoc/package.json
+35 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-exec/package.json
+36 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-header/package.json
+37 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-remotefile/package.json
+38 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/grunt-remove/package.json
+39 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/mqtt-ws/package.json
+40 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/nx-devsite/package.json
+41 verbose installManyTop reading scoped package data from /Developer/Project/web/htdoc/node_modules/yuidocjs/package.json
+42 info package.json contrib@0.0.1 No license field.
+43 info package.json grunt@0.4.5 No license field.
+44 info package.json grunt-contrib@0.9.0 No license field.
+45 info package.json grunt-cli@0.1.13 No license field.
+46 info package.json grunt-contrib-nodeunit@0.4.1 No license field.
+47 info package.json grunt-contrib-uglify@0.5.1 No license field.
+48 info package.json grunt-remotefile@0.1.0 No license field.
+49 info package.json grunt-remove@0.1.0 No license field.
+50 info package.json nx-devsite@0.0.0 No repository field.
+51 info package.json nx-devsite@0.0.0 No license field.
+52 info package.json yuidocjs@0.7.0 No license field.
+53 info package.json grunt-contrib-clean@0.5.0 No license field.
+54 info package.json grunt-contrib-concat@0.4.0 No license field.
+55 info package.json grunt-contrib-compass@0.7.2 No license field.
+56 info package.json grunt-contrib-compress@0.8.0 No license field.
+57 info package.json grunt-contrib-coffee@0.10.1 No license field.
+58 info package.json grunt-contrib-connect@0.7.1 No license field.
+59 info package.json grunt-contrib-copy@0.5.0 No license field.
+60 info package.json grunt-contrib-csslint@0.2.0 No license field.
+61 info package.json grunt-contrib-cssmin@0.9.0 No license field.
+62 info package.json grunt-contrib-handlebars@0.8.0 No license field.
+63 info package.json grunt-contrib-htmlmin@0.2.0 No license field.
+64 info package.json grunt-contrib-jade@0.11.0 No license field.
+65 info package.json grunt-contrib-imagemin@0.7.2 No license field.
+66 info package.json grunt-contrib-jasmine@0.6.5 No license field.
+67 info package.json grunt-contrib-jshint@0.10.0 No license field.
+68 info package.json grunt-contrib-jst@0.6.0 No license field.
+69 info package.json grunt-contrib-less@0.11.4 No license field.
+70 info package.json grunt-contrib-qunit@0.4.0 No license field.
+71 info package.json grunt-contrib-requirejs@0.4.4 No license field.
+72 info package.json grunt-contrib-sass@0.7.4 No license field.
+73 info package.json grunt-contrib-stylus@0.15.1 No license field.
+74 info package.json grunt-contrib-symlink@0.3.0 No license field.
+75 info package.json grunt-contrib-watch@0.6.1 No license field.
+76 info package.json grunt-contrib-yuidoc@0.5.2 No license field.
+77 info package.json grunt-exec@0.4.6 No license field.
+78 verbose readDependencies loading dependencies from /Developer/Project/web/htdoc/package.json
+79 silly cache add args [ 'build/', null ]
+80 verbose cache add spec build/
+81 silly cache add parsed spec Result {
+81 silly cache add   raw: 'build/',
+81 silly cache add   scope: null,
+81 silly cache add   name: null,
+81 silly cache add   rawSpec: 'build/',
+81 silly cache add   spec: '/Developer/Project/web/htdoc/ODL/project-nextsite.git/build',
+81 silly cache add   type: 'directory' }
+82 verbose addLocalDirectory /Users/aaikepae/.npm/nx-devsite/0.0.0/package.tgz not in flight; packing
+83 verbose tar pack [ '/Users/aaikepae/.npm/nx-devsite/0.0.0/package.tgz',
+83 verbose tar pack   '/Developer/Project/web/htdoc/ODL/project-nextsite.git/build' ]
+84 verbose tarball /Users/aaikepae/.npm/nx-devsite/0.0.0/package.tgz
+85 verbose folder /Developer/Project/web/htdoc/ODL/project-nextsite.git/build
+86 info prepublish nx-devsite@0.0.0
+87 verbose addLocalTarball adding from inside cache /Users/aaikepae/.npm/nx-devsite/0.0.0/package.tgz
+88 silly cache afterAdd nx-devsite@0.0.0
+89 verbose afterAdd /Users/aaikepae/.npm/nx-devsite/0.0.0/package/package.json not in flight; writing
+90 verbose afterAdd /Users/aaikepae/.npm/nx-devsite/0.0.0/package/package.json written
+91 silly install resolved [ { name: 'nx-devsite',
+91 silly install resolved     version: '0.0.0',
+91 silly install resolved     description: 'next develop site',
+91 silly install resolved     devDependencies:
+91 silly install resolved      { grunt: '~0.4.2',
+91 silly install resolved        'grunt-contrib-clean': '^0.6.0',
+91 silly install resolved        'grunt-contrib-copy': '^0.8.0',
+91 silly install resolved        'grunt-contrib-less': '^1.0.0' },
+91 silly install resolved     readme: 'ERROR: No README data found!',
+91 silly install resolved     _id: 'nx-devsite@0.0.0',
+91 silly install resolved     scripts: {},
+91 silly install resolved     _shasum: 'ec6360193622ed33dd86c25829a6f0fff3cdc430',
+91 silly install resolved     _from: 'ODL/project-nextsite.git/build',
+91 silly install resolved     _resolved: 'file:ODL/project-nextsite.git/build' } ]
+92 info install nx-devsite@0.0.0 into /Developer/Project/web/htdoc
+93 info installOne nx-devsite@0.0.0
+94 verbose installOne of nx-devsite to /Developer/Project/web/htdoc not in flight; installing
+95 verbose lock using /Users/aaikepae/.npm/_locks/nx-devsite-fa7f1203506126df.lock for /Developer/Project/web/htdoc/node_modules/nx-devsite
+96 silly install write writing nx-devsite 0.0.0 to /Developer/Project/web/htdoc/node_modules/nx-devsite
+97 verbose unbuild node_modules/nx-devsite
+98 info preuninstall nx-devsite@0.0.0
+99 info uninstall nx-devsite@0.0.0
+100 verbose unbuild rmStuff nx-devsite@0.0.0 from /Developer/Project/web/htdoc/node_modules
+101 info postuninstall nx-devsite@0.0.0
+102 silly gentlyRm /Developer/Project/web/htdoc/node_modules/nx-devsite is being purged from base /Developer/Project/web/htdoc
+103 verbose gentlyRm don't care about contents; nuking /Developer/Project/web/htdoc/node_modules/nx-devsite
+104 silly vacuum-fs purging /Developer/Project/web/htdoc/node_modules/nx-devsite
+105 silly vacuum-fs quitting because other entries in /Developer/Project/web/htdoc/node_modules
+106 verbose tar unpack /Users/aaikepae/.npm/nx-devsite/0.0.0/package.tgz
+107 verbose tar unpacking to /Developer/Project/web/htdoc/node_modules/nx-devsite
+108 silly gentlyRm /Developer/Project/web/htdoc/node_modules/nx-devsite is being purged
+109 verbose gentlyRm don't care about contents; nuking /Developer/Project/web/htdoc/node_modules/nx-devsite
+110 silly gunzTarPerm modes [ '755', '644' ]
+111 silly gunzTarPerm extractEntry package.json
+112 silly gunzTarPerm extractEntry Gruntfile.js
+113 verbose write writing to /Developer/Project/web/htdoc/node_modules/nx-devsite/package.json
+114 info preinstall nx-devsite@0.0.0
+115 verbose readDependencies loading dependencies from /Developer/Project/web/htdoc/node_modules/nx-devsite/package.json
+116 verbose readDependencies loading dependencies from /Developer/Project/web/htdoc/node_modules/nx-devsite/package.json
+117 silly install resolved []
+118 verbose about to build /Developer/Project/web/htdoc/node_modules/nx-devsite
+119 info build /Developer/Project/web/htdoc/node_modules/nx-devsite
+120 info linkStuff nx-devsite@0.0.0
+121 silly linkStuff nx-devsite@0.0.0 has /Developer/Project/web/htdoc/node_modules as its parent node_modules
+122 verbose linkBins nx-devsite@0.0.0
+123 verbose linkMans nx-devsite@0.0.0
+124 verbose rebuildBundles nx-devsite@0.0.0
+125 info install nx-devsite@0.0.0
+126 info postinstall nx-devsite@0.0.0
+127 verbose unlock done using /Users/aaikepae/.npm/_locks/nx-devsite-fa7f1203506126df.lock for /Developer/Project/web/htdoc/node_modules/nx-devsite
+128 verbose validateInstall loading /Developer/Project/web/htdoc/package.json for validation
+129 verbose stack Error: The package grunt-contrib-compress@0.8.0 does not satisfy its siblings' peerDependencies requirements!
+129 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+129 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+129 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+129 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+129 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+129 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+129 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+129 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+129 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+129 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+130 verbose cwd /Developer/Project/web/htdoc/ODL/project-nextsite.git
+131 error Darwin 14.5.0
+132 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "build/"
+133 error node v4.2.4
+134 error npm  v2.14.12
+135 error code EPEERINVALID
+136 error peerinvalid The package grunt-contrib-compress@0.8.0 does not satisfy its siblings' peerDependencies requirements!
+136 error peerinvalid Peer grunt-contrib@0.9.0 wants grunt-contrib-compress@~0.6.1
+137 verbose exit [ 1, true ]

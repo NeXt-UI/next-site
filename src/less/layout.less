@@ -1,0 +1,297 @@
+/**layout Start**/
+.wrap {
+  width: 1020px;
+  position: relative;
+  z-index:1;
+}
+.w1020{
+  width:1020px;
+}
+em{
+  font-style: normal;
+}
+hr{
+  border-top: 1px solid #e6e6e6;
+}
+
+.justify-list_ {
+  vertical-align: top;
+  text-align: justify;
+  text-justify: distribute-all-lines; /* distribute items in IE */
+  *zoom:1;
+  & > * {
+    text-align: left; /* customize to suit */
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+  }
+  /* fully justify all items in browsers other than IE */
+  /*
+  Attention:IE7 don't need the solution when you use span/a/input and the other default inline element.
+  */
+  &:after {
+    display: inline-block;
+    content:'\200b';
+    overflow: hidden;
+    height: 0;
+    width: 100%;
+  }
+}
+
+.m-main {
+  .left>p,
+  .right>p{
+    padding:0 5px;
+    &.bdc1 {
+      border-color: #4460ad;
+    }
+    &.bdc2 {
+      border-color:#fbb03b;
+    }
+    &.bdc3 {
+      border-color:#30aab7;
+    }
+  }
+  .left {
+    width: 210px;
+    border-color: #4460ad;
+    .mr8{
+      padding-right:8px;
+    }
+    p{
+      border-right: 5px solid;
+    }
+  }
+  .middle {
+  }
+  .right {
+    width: 256px;
+    .ml8{
+      padding-left:8px;
+    }
+    p{
+      border-left: 5px solid;
+    }
+  }
+}
+
+
+.m-quote{
+  line-height: 20px;
+  .f24{
+    color:#4460AD;
+  }
+  i{
+    margin-left:5px;
+    margin-right:5px;
+    color:#30AAB7;
+  }
+  hr{
+    border-top:1px solid #ccc;
+  }
+  p.c6{
+    line-height: 24px;
+  }
+  ul{
+    font-family: "Cisco Sans Extra Light";
+    .c6{
+      font-size:16px;
+      color:#000;
+    }
+    .vim_{
+
+      span{
+        .f14{
+          font-family: "Cisco Screen Pro";
+        }
+        .f12{}
+      }
+    }
+  }
+}
+
+.m-example-list{
+  .dib{
+    margin-bottom: 20px;
+    img{
+      width:140px;
+      height:140px;
+      border: 1px solid #ccc;
+      padding:1px;
+    }
+    p{
+      line-height: 20px;
+      .tc;
+    }
+  }
+}
+
+.m-show-case{
+  .col1{
+    width:250px;
+    border-right:1px solid #ccc;
+  }
+  .col2{
+    width:760px;
+    >.mr50{
+      margin-right:120px;
+    }
+    hr.my20{
+      margin:30px 0;
+    }
+  }
+  h2.f16{
+    font-size:18px;
+    font-weight: normal;
+    +p{
+      font-size:14px;
+      color:#666;
+    }
+  }
+}
+
+.m-side-nav{
+  margin-left: 10px;
+  li{
+    border-left:4px solid transparent;
+    padding-left: 10px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    font-family: "Cisco Screen Pro Light";
+    font-size:14px;
+    &.active{
+      border-color:#ccc;
+    }
+    a{
+      color:#000;
+    }
+  }
+}
+.m-yui-iframe{
+  width:100%;
+  height:100%;
+}
+
+.m-header{
+  z-index:100;
+  top:0;
+  width:100%;
+  font-family: "Cisco Sans Reg";
+  .link-f_{
+    a{
+      float: left;
+      display: block;
+      &:hover,
+      &.active{
+        text-decoration: none;
+        color:#30e2d5;
+      }
+    }
+  }
+}
+
+.m-dropdown-menu{
+  position: absolute;
+  top: 95%;
+  right:20px;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #000;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0,0,0,.15);
+  li{
+    line-height: 24px;
+    height: 24px;
+    &>a{
+      display: block;
+      padding: 3px 20px;
+      clear: both;
+      font-weight: 400;
+      line-height: 1.42857143;
+      color: #fff;
+      white-space: nowrap;
+      &:focus,
+      &:hover{
+        color: #fff;
+        text-decoration: none;
+        background-color: #333;
+      }
+    }
+  }
+
+}
+
+.m-banner-wrap{
+  height:300px;
+  background: -webkit-linear-gradient(0deg,#30c7b7, #4460ad);
+  .f50{
+    border:3px solid #fff;
+    font-family: "Cisco Sans Reg";
+    font-size:60px;
+    font-weight: normal;
+    width:475px;
+    height:78px;
+    line-height: 78px;
+    text-align: center;
+  }
+}
+
+.m-banner {
+  background: url(../images/bg_image.png) 0 50% no-repeat;
+  height: 300px;
+  .main {
+    width: 478px;
+  }
+}
+
+.m-feature{
+  .ul{
+    &:extend(.justify-list_ all);
+    &>span{
+      width:47%;
+      dt{
+        width:60px;
+        text-align: center;
+      }
+      dd{
+        h1{
+          font-family: "Cisco Sans Extra Light";
+          font-size:18px;
+        }
+        p{
+          font-size:14px;
+          line-height: 20px;
+        }
+      }
+      .f60{
+        font-size:55.5px;
+      }
+    }
+  }
+
+}
+
+.btnv1{
+  &:hover{
+    text-decoration: none;
+    background: darken(#fbb03b,10%);
+  }
+}
+.btnv2{
+  font-size:16px;
+  &:hover{
+    text-decoration: none;
+    background: darken(#3fa9f5,10%);
+  }
+}
+/**layout  End**/
