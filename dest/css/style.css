@@ -638,6 +638,9 @@ hr {
   text-decoration: none;
   color: #30e2d5;
 }
+.m-header .logo-image {
+  height: 25px;
+}
 .m-dropdown-menu {
   position: absolute;
   top: 95%;

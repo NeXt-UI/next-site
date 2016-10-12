@@ -1,5 +1,5 @@
 ##Install
-+ npm install -g grunt-cli
++ npm install --only=dev
 + cd ~/www/GitOsChina/project-nextsite
 + grunt --force
 

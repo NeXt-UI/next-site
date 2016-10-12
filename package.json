@@ -1,11 +1,19 @@
 {
-    "name": "nx-devsite",
-    "version": "0.0.0",
-    "description": "next develop site",
-    "devDependencies": {
-        "grunt": "~0.4.2",
-        "grunt-contrib-clean": "^0.6.0",
-        "grunt-contrib-copy": "^0.8.0",
-        "grunt-contrib-less": "^1.0.0"
-    }
+  "name": "nx-devsite",
+  "description": "NeXt UI Toolkit web-site",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NeXt-UI/next-site"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-less": "^1.0.0"
+  },
+  "homepage": "http://next-ui.com",
+  "license": "UNLICENSED",
+  "private": false
 }
