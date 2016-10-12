@@ -1,9 +1,8 @@
-##Install
-+ npm install --only=dev
-+ cd ~/www/GitOsChina/project-nextsite
-+ grunt --force
+## Development Environment Installation
++ ```npm install --only=dev``` to install dependencies
++ ```grunt --force``` to build and run
 
-##Know issues:
+## Known issues
 + download page need to udpate by design.
 + page scroll by height in show-case/example page.
 + popup in show-case page.
