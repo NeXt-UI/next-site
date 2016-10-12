@@ -9,7 +9,7 @@ var paths = require("./gulpfile-paths"),
 
 gulp.task("clean-full", function () {
 	return del([
-		paths.dest
+		paths.dest()
 
 	], {
 		force: true
@@ -18,8 +18,8 @@ gulp.task("clean-full", function () {
 
 gulp.task("clean", function () {
 	return del([
-		paths.dest,
-		"!" + paths.vendor.src
+		paths.dest(),
+		"!" + paths.dest("vendor")
 
 	], {
 		force: true
@@ -28,44 +28,40 @@ gulp.task("clean", function () {
 
 // build HTML
 gulp.task("build:html", function(){
-	return gulp.src(paths.html.src)
-		.pipe(gulp.dest(paths.html.dest));
+	return gulp.src(paths.src("html.pages"))
+		.pipe(gulp.dest(paths.dest("html.pages")));
 });
 
 // build LESS files into CSS
 gulp.task("build:less", function(){
-	return gulp.src(paths.html.src)
+	return gulp.src(paths.src("less"))
 		.pipe(compileLess())
 		.pipe(minifyCss())
-		.pipe(rename(paths.less.dest))
-		.pipe(gulp.dest(paths.html.dest));
+		.pipe(rename(paths.get("less.destFile")))
+		.pipe(gulp.dest(paths.dest("less")));
 });
 
 
 gulp.task("build:js", function(){
-	return gulp.src(paths.html.src)
-		.pipe(gulp.dest(paths.html.dest));
+	return gulp.src(paths.src("js"))
+		.pipe(gulp.dest(paths.dest("js")));
 });
 
 gulp.task("build:images", function(){
 	// todo: compress/optimize images
-	return gulp.src(paths.images.src)
-		.pipe(gulp.dest(paths.images.dest));
+	return gulp.src(paths.src("images"))
+		.pipe(gulp.dest(paths.dest("images")));
 });
 
 gulp.task("build:fonts", function(){
-	return gulp.src(paths.fonts.src)
-		.pipe(gulp.dest(paths.fonts.dest));
+	return gulp.src(paths.src("fonts"))
+		.pipe(gulp.dest(paths.dest("fonts")));
 });
 
-// full clean & build
-gulp.task("build-full", function(){
-	return runSequence(
-		"clean-full",
-		["build:less", "build:js", "build:images", "build:fonts"],
-		"build:html"
-	);
-});
+// // full clean & build
+// gulp.task("build-full", function(){
+// 	//not implemented
+// });
 
 // build
 gulp.task("build", function(){
@@ -77,5 +73,5 @@ gulp.task("build", function(){
 });
 
 gulp.task("default", function(){
-	console.log(paths);
+	// todo: watchers + webserver
 });

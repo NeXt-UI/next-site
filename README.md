@@ -1,4 +1,5 @@
 ## Development Environment Installation
++ ```npm install --global gulp-cli```
 + ```npm install --only=dev``` to install dependencies
 + ```grunt --force``` to build and run
 
