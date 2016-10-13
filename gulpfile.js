@@ -7,23 +7,38 @@ var paths = require("./gulpfile-paths"),
 	runSequence = require("run-sequence"),
 	del = require("del");
 
-gulp.task("clean-full", function () {
-	return del([
-		paths.dest()
 
-	], {
-		force: true
-	});
+// delete content of "dest" directory (except the directory itself)
+gulp.task("clean-full", function (cb) {
+
+	return del(
+		[
+			paths.dest() + "/**",
+			"!" + paths.dest()
+		],
+		{
+			force: true
+		},
+		cb
+	);
+
 });
 
-gulp.task("clean", function () {
-	return del([
-		paths.dest(),
-		"!" + paths.dest("vendor")
+// delete content of "dest" directory except vendor files
+gulp.task("clean-fast", function (cb) {
 
-	], {
-		force: true
-	});
+	return del(
+		[
+			paths.dest() + "/**",
+			"!" + paths.dest(),
+			"!" + paths.dest("vendor") + "**"
+		],
+		{
+			force: true
+		},
+		cb
+	);
+
 });
 
 // build HTML
@@ -70,7 +85,7 @@ gulp.task("build:vendor", function(){
 gulp.task("build-full", function(){
 	return runSequence(
 		"clean-full",
-		["build:less", "build:js", "build:images", "build:vendor"],
+		["build:less", "build:js", "build:images", "build:fonts", "build:vendor"],
 		"build:html"
 	);
 });
@@ -78,7 +93,7 @@ gulp.task("build-full", function(){
 // build CSS, JS and HTML only
 gulp.task("build-fast", function(){
 	return runSequence(
-		"clean",
+		"clean-fast",
 		["build:less", "build:js", "build:images", "build:fonts"],
 		"build:html"
 	);

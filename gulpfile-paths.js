@@ -48,7 +48,7 @@ var Paths = function(){
 
 		// all fonts
 		"fonts": {
-			"src": "/fonts/*.*",
+			"src": "/fonts/**/*.*",
 			"dest": "/fonts/"
 		},
 
