@@ -41,30 +41,42 @@ gulp.task("build:less", function(){
 		.pipe(gulp.dest(paths.dest("less")));
 });
 
-
+// build scripts
 gulp.task("build:js", function(){
 	return gulp.src(paths.src("js"))
 		.pipe(gulp.dest(paths.dest("js")));
 });
 
+// bunble images
 gulp.task("build:images", function(){
 	// todo: compress/optimize images
 	return gulp.src(paths.src("images"))
 		.pipe(gulp.dest(paths.dest("images")));
 });
 
+// build fonts
 gulp.task("build:fonts", function(){
 	return gulp.src(paths.src("fonts"))
 		.pipe(gulp.dest(paths.dest("fonts")));
 });
 
-// // full clean & build
-// gulp.task("build-full", function(){
-// 	//not implemented
-// });
+// bundle vendor files
+gulp.task("build:vendor", function(){
+	return gulp.src(paths.src("vendor"))
+		.pipe(gulp.dest(paths.dest("vendor")));
+});
 
-// build
-gulp.task("build", function(){
+// full clean & build
+gulp.task("build-full", function(){
+	return runSequence(
+		"clean-full",
+		["build:less", "build:js", "build:images", "build:vendor"],
+		"build:html"
+	);
+});
+
+// build CSS, JS and HTML only
+gulp.task("build-fast", function(){
 	return runSequence(
 		"clean",
 		["build:less", "build:js", "build:images", "build:fonts"],
