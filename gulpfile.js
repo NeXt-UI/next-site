@@ -47,8 +47,12 @@ gulp.task("clean-fast", function (cb) {
 gulp.task("build:html", function(){
 	return gulp.src(paths.src("html.pages"))
 		.pipe(fileInclude({
-			prefix: '@@',
-			basepath: '@file'
+			prefix: "@@",
+			basepath: "@file",
+			context: {
+				navActiveItem: ""
+			}
+
 		}))
 		.pipe(gulp.dest(paths.dest("html.pages")));
 });
