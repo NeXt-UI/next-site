@@ -100,13 +100,17 @@ gulp.task("build-fast", function(){
 	);
 });
 
-gulp.task("watch", function(){
-	return watch(paths.src(), { ignoreInitial: false }, function(){
+// simple watcher that listens to any changes
+gulp.task("simple-watch", function(){
+
+	// gulp.watch(paths.src(), ["build-fast"])
+	return watch(paths.src(), { ignoreInitial: true }, function(){
 		console.log("Change detected");
-		gulp.run("build-fast");
+		runSequence("build-fast");
 	});
 });
 
 gulp.task("default", function(){
-	// todo: watchers + webserver
+	console.log("Initial build & start watcher");
+	runSequence("build-fast", "simple-watch");
 });
