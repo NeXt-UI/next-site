@@ -14,5 +14,4 @@ sandbox/
 node/
 !src/js/graphic/topology/node/
 
-screenshot-parser/.idea
-screenshot-parser/screenshots
+codepen-parser/.idea
