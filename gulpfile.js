@@ -6,7 +6,8 @@ var paths = require("./gulpfile-paths"),
 	rename = require("gulp-rename"),
 	runSequence = require("run-sequence"),
 	del = require("del"),
-	watch = require("gulp-watch");
+	watch = require("gulp-watch"),
+	fileInclude = require("gulp-file-include");
 
 
 // delete content of "dest" directory (except the directory itself)
@@ -45,6 +46,10 @@ gulp.task("clean-fast", function (cb) {
 // build HTML
 gulp.task("build:html", function(){
 	return gulp.src(paths.src("html.pages"))
+		.pipe(fileInclude({
+			prefix: '@@',
+			basepath: '@file'
+		}))
 		.pipe(gulp.dest(paths.dest("html.pages")));
 });
 
