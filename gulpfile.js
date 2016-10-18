@@ -121,5 +121,5 @@ gulp.task("simple-watch", function(){
 
 gulp.task("default", function(){
 	console.log("Initial build & start watcher");
-	runSequence("build-fast", "simple-watch");
+	runSequence("build-full", "simple-watch");
 });
