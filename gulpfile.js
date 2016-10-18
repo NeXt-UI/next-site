@@ -5,7 +5,8 @@ var paths = require("./gulpfile-paths"),
 	uglify = require("gulp-uglify"),
 	rename = require("gulp-rename"),
 	runSequence = require("run-sequence"),
-	del = require("del");
+	del = require("del"),
+	watch = require("gulp-watch");
 
 
 // delete content of "dest" directory (except the directory itself)
@@ -97,6 +98,13 @@ gulp.task("build-fast", function(){
 		["build:less", "build:js", "build:images", "build:fonts"],
 		"build:html"
 	);
+});
+
+gulp.task("watch", function(){
+	return watch(paths.src(), { ignoreInitial: false }, function(){
+		console.log("Change detected");
+		gulp.run("build-fast");
+	});
 });
 
 gulp.task("default", function(){

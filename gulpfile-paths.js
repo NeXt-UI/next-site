@@ -42,7 +42,7 @@ var Paths = function(){
 
 		// all images
 		"images": {
-			"src": "/images/*.*",
+			"src": "/images/**/*.*",
 			"dest": "/images/"
 		},
 
