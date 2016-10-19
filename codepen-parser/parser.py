@@ -2,24 +2,6 @@ import logging
 import requests
 import xmltodict
 
-# Target file to
-target_file = "examples.html"
-# Donor collection's ID
-collection_id = "nrBeEQ" # nMWevE
-# URL of the collection
-feed_url = "http://codepen.io/collection/" + collection_id + "/feed"
-
-# link categories' IDs to labels
-cat_link = [
-    {
-        "tag": "base",
-        "label": "Base"
-    }
-]
-
-# this will contain parsed
-cat_content = {}
-
 
 def find_between(s, first, last):
     try:
@@ -42,20 +24,51 @@ def parse_item(item):
     }
     return item_data
 
-# read the feed
-r = requests.get(feed_url)
 
-if r.status_code == 200:
-
-    feed_root = xmltodict.parse(r.text)
-    feed_items = feed_root["rss"]["channel"]["item"]
-
-    if isinstance(feed_items, list):
-        for feed_item in feed_items:
-            print(parse_item(feed_item))
+def add_to_category(item, categories):
+    tag = item["tag"]
+    if categories.get(tag) is None:
+        categories[tag] = [
+            item
+        ]
     else:
-        print(parse_item(feed_items))
+        categories[tag].append(item)
+    return categories
 
-else:
-    print(r.status_code)
-    logging.error(msg="Could not fetch data from codepen")
+
+def parse_collection(collection_id):
+    # link categories' IDs to labels
+    cat_link = [
+        {
+            "tag": "base",
+            "label": "Base"
+        }
+    ]
+
+    # this will contain parsed
+    cat_content = {}
+
+    # URL of the collection
+    feed_url = "http://codepen.io/collection/" + collection_id + "/feed"
+
+    # read the feed
+    r = requests.get(feed_url)
+
+    if r.status_code == 200:
+
+        feed_root = xmltodict.parse(r.text)
+        feed_items = feed_root["rss"]["channel"]["item"]
+
+        if isinstance(feed_items, list):
+            for feed_item in feed_items:
+                add_to_category(item=parse_item(feed_item), categories=cat_content)
+        else:
+            add_to_category(item=parse_item(feed_items), categories=cat_content)
+
+    else:
+        logging.error(msg="Could not fetch data from codepen")
+
+    return cat_content
+
+
+print(parse_collection(collection_id="nMWevE"))  # nrBeEQ
