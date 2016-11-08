@@ -15,3 +15,6 @@ node/
 !src/js/graphic/topology/node/
 
 codepen-parser/.idea
+codepen-parser/__pycache__/
+
+todo.txt

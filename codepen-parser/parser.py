@@ -13,37 +13,47 @@ def find_between(s, first, last):
 
 
 def parse_item(item):
-    tag = find_between(item["description"], "tag[", "]")
+    tags = [x.strip() for x in find_between(item["description"], "tags[", "]").split(',')]
     description = find_between(item["description"], "description[", "]")
     item_data = {
         "link": item["link"],
-        "image": item["link"] + "/image/small.jpg",
+        "image": item["link"] + "/image/small.png",
         "title": item["title"],
-        "tag": tag,
+        "tags": tags,
         "description": description
     }
     return item_data
 
 
-def add_to_category(item, categories):
-    tag = item["tag"]
-    if categories.get(tag) is None:
-        categories[tag] = [
-            item
-        ]
-    else:
-        categories[tag].append(item)
+def add_to_category(item, categories, cat_link):
+    tags = item["tags"]
+    for tag in tags:
+        if categories.get(tag) is None:
+            category_linked_data = cat_link.get(tag)
+            if category_linked_data is not None:
+                category_label = cat_link.get(tag).get("label")
+            else:
+                category_label = tag.title()
+            categories[tag] = {
+                "meta": {
+                    "label": category_label
+                },
+                "items": [
+                    item
+                ]
+            }
+        else:
+            categories[tag]["items"].append(item)
     return categories
 
 
 def parse_collection(collection_id):
     # link categories' IDs to labels
-    cat_link = [
-        {
-            "tag": "base",
-            "label": "Base"
+    cat_link = {
+        "basic": {
+            "label": "Basic"
         }
-    ]
+    }
 
     # this will contain parsed
     cat_content = {}
@@ -61,14 +71,12 @@ def parse_collection(collection_id):
 
         if isinstance(feed_items, list):
             for feed_item in feed_items:
-                add_to_category(item=parse_item(feed_item), categories=cat_content)
+                add_to_category(item=parse_item(feed_item), categories=cat_content, cat_link=cat_link)
         else:
-            add_to_category(item=parse_item(feed_items), categories=cat_content)
+            add_to_category(item=parse_item(feed_items), categories=cat_content, cat_link=cat_link)
 
     else:
         logging.error(msg="Could not fetch data from codepen")
 
     return cat_content
 
-
-print(parse_collection(collection_id="nMWevE"))  # nrBeEQ
