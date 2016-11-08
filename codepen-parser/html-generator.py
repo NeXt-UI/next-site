@@ -1,8 +1,10 @@
 import parser
+import os
 
 collection_content = parser.parse_collection(collection_id="nMWevE")
 
-f = open('examples.html', 'w')
+dir_path = os.path.dirname(os.path.realpath(__file__))
+f = open(dir_path + "/examples.html", "w")
 
 # generate header
 f.write("""@@include('_head.html')

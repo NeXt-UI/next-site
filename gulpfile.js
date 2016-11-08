@@ -7,7 +7,9 @@ var paths = require("./gulpfile-paths"),
 	runSequence = require("run-sequence"),
 	del = require("del"),
 	watch = require("gulp-watch"),
-	fileInclude = require("gulp-file-include");
+	fileInclude = require("gulp-file-include"),
+	pyshell = require("python-shell"),
+	fs = require("fs");
 
 
 // delete content of "dest" directory (except the directory itself)
@@ -41,6 +43,15 @@ gulp.task("clean-fast", function (cb) {
 		cb
 	);
 
+});
+
+gulp.task("build:examples.html", function(){
+	pyshell.run("codepen-parser/html-generator.py", {
+		"pythonPath": "/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5"
+	}, function (err) {
+		if (err) throw err;
+		fs.createReadStream("codepen-parser/examples.html").pipe(fs.createWriteStream("src/examples.html"));
+	});
 });
 
 // build HTML
@@ -95,7 +106,7 @@ gulp.task("build:vendor", function(){
 gulp.task("build-full", function(){
 	return runSequence(
 		"clean-full",
-		["build:less", "build:js", "build:images", "build:fonts", "build:vendor"],
+		["build:less", "build:js", "build:images", "build:fonts", "build:vendor", "build:examples.html"],
 		"build:html"
 	);
 });
@@ -104,7 +115,7 @@ gulp.task("build-full", function(){
 gulp.task("build-fast", function(){
 	return runSequence(
 		"clean-fast",
-		["build:less", "build:js", "build:images", "build:fonts"],
+		["build:less", "build:js", "build:images", "build:fonts", "build:examples.html"],
 		"build:html"
 	);
 });
@@ -113,7 +124,10 @@ gulp.task("build-fast", function(){
 gulp.task("simple-watch", function(){
 
 	// gulp.watch(paths.src(), ["build-fast"])
-	return watch(paths.src(), { ignoreInitial: true }, function(){
+	return watch([
+		paths.src(),
+		"!" + paths.src() + "/examples.html"
+	], { ignoreInitial: true }, function(){
 		console.log("Change detected");
 		runSequence("build-fast");
 	});

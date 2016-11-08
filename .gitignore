@@ -16,5 +16,6 @@ node/
 
 codepen-parser/.idea
 codepen-parser/__pycache__/
+codepen-parser/*.pyc
 
 todo.txt
