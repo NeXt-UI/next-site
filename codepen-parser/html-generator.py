@@ -24,14 +24,11 @@ for category in collection_content:
     # add items
     for item in cat["items"]:
         flag += 1
-        f.write("""
-        <li class="w1-2">
-            <div class="dib">
-                <img src="{}" alt=""/>
-                <p>{}</p>
-            </div>
-            </li>
-        """.format(item.get("image"), item.get("description")))
+        filler.insert_item_content(f=f,
+                                   title=item.get("title"),
+                                   image=item.get("image"))
+
+        filler.insert_details_box(f)
 
     # add trailing tags
     filler.insert_row_end(f)
