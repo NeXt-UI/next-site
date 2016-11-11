@@ -6,8 +6,11 @@ import xmltodict
 def find_between(s, first, last):
     try:
         start = s.index(first) + len(first)
-        end = s.index(last, start)
-        return s[start:end]
+        if last != "":
+            end = s.index(last, start)
+            return s[start:end]
+        else:
+            return s[start:]
     except ValueError:
         return ""
 
@@ -16,12 +19,12 @@ def parse_item(item):
 
     tags = [x.strip() for x in find_between(item["description"], "tags[", "]").split(',')]
     description = find_between(item["description"], "description[", "]")
-    hash = find_between(item["link"], "/pen/", "</link>")
+    item_hash = find_between(item["link"], "/pen/", "")
     item_data = {
         "link": item["link"],
         "image": item["link"] + "/image/small.png",
         "title": item["title"],
-        "hash": hash,
+        "hash": item_hash,
         "tags": tags,
         "description": description
     }

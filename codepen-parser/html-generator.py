@@ -22,17 +22,35 @@ for category in collection_content:
 
     filler.insert_row_start(f)
 
-    flag = 1
+    row_count = 1
+    item_details_list = []
     # add items
     for item in cat["items"]:
-        print(item_id)
-        filler.insert_item_content(f=f, item_id=item_id, item=item)
-        filler.insert_details_box(f=f, item_id=item_id, item=item)
+        if row_count % items_in_row == 0:
+            filler.insert_row_end(f)
+            filler.insert_details_boxes(f=f, items=item_details_list)
+            filler.insert_row_start(f)
+            # reset stuff
+            row_count = 0
+            item_details_list.clear()
+        else:
+            filler.insert_item_content(f=f, item_id=item_id, item=item)
+            item_details_list.append({
+                "item_id": item_id,
+                "data": item
+            })
+
+        # filler.insert_details_box(f=f, item_id=item_id, item=item)
+
         item_id += 1
-        flag += 1
+        row_count += 1
 
     # add trailing tags
     filler.insert_row_end(f)
+
+    if len(item_details_list) > 0:
+        filler.insert_details_boxes(f=f, items=item_details_list)
+
     filler.insert_section_end(f)
 
 # add footer
