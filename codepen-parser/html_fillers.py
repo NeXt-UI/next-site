@@ -97,9 +97,12 @@ def insert_footer(f):
 
             if(displayMode == "none"){
                 // toggle off all
-                $( ".example-content" ).slideUp( "slow" );
+                $( ".example-content" ).css( "display", "none" );
                 // toggle on one
                 selectedEl.slideDown( "slow" );
+                $('html, body').animate({
+                    scrollTop: selectedEl.offset().top
+                }, 1000);
             }
             else {
                 selectedEl.slideUp( "slow" );
