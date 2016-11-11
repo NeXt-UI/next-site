@@ -80,8 +80,21 @@ def insert_footer(f):
     <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
     <script>
         $( "[id^=example-toggle-]" ).click(function(event) {
+
             var trailingId = event.target.id.split("-")[2];
-            $( "#example-content-" + trailingId ).slideToggle( "slow" );
+            var selectedEl = $( "#example-content-" + trailingId );
+            var displayMode = selectedEl.css('display');
+
+            if(displayMode == "none"){
+                // toggle off all
+                $( ".example-content" ).slideUp( "slow" );
+                // toggle on one
+                selectedEl.slideDown( "slow" );
+            }
+            else {
+                selectedEl.slideUp( "slow" );
+            }
+
         });
     </script>
 

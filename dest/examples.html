@@ -44,20 +44,20 @@
 	</header>
 </nav>
 
-    <div class="auto wrap"><h2 class="mx20 f16" style="margin:16px 0 10px 95px;"><strong>Cisco</strong></h2>
+    <div class="auto wrap"><h2 class="mx20 f16" style="margin:16px 0 10px 95px;"><strong>Path</strong></h2>
         <section style="margin-left:95px;"><ul class="clfix l_ m-example-list">
     <li class="w1-2">
         <div class="dib">
-            <img src="http://codepen.io/NEXTSUPPORT/pen/PNVXvx/image/small.png" class="pointer" id="example-toggle-1" alt=""/>
-            <p>Extend Node with Icon</p>
+            <img src="http://codepen.io/NEXTSUPPORT/pen/dpkjLY/image/small.png" class="pointer" id="example-toggle-1" alt=""/>
+            <p>Draw a path</p>
         </div>
         </li>
     
     <div id="example-content-1" class="display-none example-content">
-    <p class="f24 tc hlh60 c-qin">Extend Node with Icon</p>
+    <p class="f24 tc hlh60 c-qin">Draw a path</p>
     <div>
 
-        <p class="example-content-description">This example demonstrates extension of the node with an icon</p>
+        <p class="example-content-description">Draw a simple path</p>
 
         <p data-height="400"
            data-theme-id="dark"
@@ -65,9 +65,9 @@
            data-default-tab="result"
            data-user="NEXTSUPPORT"
            data-embed-version="2"
-           data-pen-title="Extend Node with Icon"
+           data-pen-title="Draw a path"
            class="codepen">
-            See the Pen <a href="http://codepen.io/NEXTSUPPORT/pen/PNVXvx">Extend Node with Icon</a>
+            See the Pen <a href="http://codepen.io/NEXTSUPPORT/pen/dpkjLY">Draw a path</a>
             by Aikepaer Abuduweili (<a href="http://codepen.io/NEXTSUPPORT">@NEXTSUPPORT</a>)
             on <a href="http://codepen.io">CodePen</a>.
         </p>
@@ -154,20 +154,20 @@
             </a>
         </div>
 
-    </div></ul></section><h2 class="mx20 f16" style="margin:16px 0 10px 95px;"><strong>Path</strong></h2>
+    </div></ul></section><h2 class="mx20 f16" style="margin:16px 0 10px 95px;"><strong>Cisco</strong></h2>
         <section style="margin-left:95px;"><ul class="clfix l_ m-example-list">
     <li class="w1-2">
         <div class="dib">
-            <img src="http://codepen.io/NEXTSUPPORT/pen/dpkjLY/image/small.png" class="pointer" id="example-toggle-4" alt=""/>
-            <p>Draw a path</p>
+            <img src="http://codepen.io/NEXTSUPPORT/pen/PNVXvx/image/small.png" class="pointer" id="example-toggle-4" alt=""/>
+            <p>Extend Node with Icon</p>
         </div>
         </li>
     
     <div id="example-content-4" class="display-none example-content">
-    <p class="f24 tc hlh60 c-qin">Draw a path</p>
+    <p class="f24 tc hlh60 c-qin">Extend Node with Icon</p>
     <div>
 
-        <p class="example-content-description">Draw a simple path</p>
+        <p class="example-content-description">This example demonstrates extension of the node with an icon</p>
 
         <p data-height="400"
            data-theme-id="dark"
@@ -175,9 +175,9 @@
            data-default-tab="result"
            data-user="NEXTSUPPORT"
            data-embed-version="2"
-           data-pen-title="Draw a path"
+           data-pen-title="Extend Node with Icon"
            class="codepen">
-            See the Pen <a href="http://codepen.io/NEXTSUPPORT/pen/dpkjLY">Draw a path</a>
+            See the Pen <a href="http://codepen.io/NEXTSUPPORT/pen/PNVXvx">Extend Node with Icon</a>
             by Aikepaer Abuduweili (<a href="http://codepen.io/NEXTSUPPORT">@NEXTSUPPORT</a>)
             on <a href="http://codepen.io">CodePen</a>.
         </p>
@@ -195,8 +195,21 @@
     <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
     <script>
         $( "[id^=example-toggle-]" ).click(function(event) {
+
             var trailingId = event.target.id.split("-")[2];
-            $( "#example-content-" + trailingId ).slideToggle( "slow" );
+            var selectedEl = $( "#example-content-" + trailingId );
+            var displayMode = selectedEl.css('display');
+
+            if(displayMode == "none"){
+                // toggle off all
+                $( ".example-content" ).slideUp( "slow" );
+                // toggle on one
+                selectedEl.slideDown( "slow" );
+            }
+            else {
+                selectedEl.slideUp( "slow" );
+            }
+
         });
     </script>
 
