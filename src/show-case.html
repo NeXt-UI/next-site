@@ -11,12 +11,12 @@
             <div class="p10">
                 <h2 class="f16 mb10" style="margin-left:10px; font-weight: normal">Projects</h2>
                 <nav class="m-side-nav">
-                    <li class="active"><a href="#">APIC-EM</a></li>
-                    <li><a href="#">ODL APP</a></li>
-                    <li><a href="#">LOKI</a></li>
-                    <li><a href="#">VIRL</a></li>
-                    <li><a href="#">WAE</a></li>
-                    <li><a href="#">IWAN</a></li>
+                    <li class="active"><a href="#" onclick="scrollToId('showcase-apic-em')">APIC-EM</a></li>
+					<li class="active"><a href="#" onclick="scrollToId('showcase-virl')">VIRL</a></li>
+                    <li class="active"><a href="#" onclick="scrollToId('showcase-pce-of')">PCE-OpenFlow</a></li>
+                    <li class="active"><a href="#" onclick="scrollToId('showcase-loki')">LOKI</a></li>
+                    <!--<li class="active"><a href="#" onclick="scrollToId('showcase-wae')">WAE</a></li>-->
+                    <!--<li class="active"><a href="#" onclick="scrollToId('showcase-iwan')">IWAN</a></li>-->
                 </nav>
                 <section class="mr20" style="margin-left: 10px;">
                     <p class="blank50"></p>
@@ -38,21 +38,24 @@
             </div>
         </aside>
         <div class="col2 r">
-            <div class="tl p10 mr50">
+            <div class="tl p10 mr50 showcase-text-container">
 
                 <h1>Showcase</h1>
-                <p class="f18" style="font-family: 'Cisco Screen Pro Light';line-height: 24px;">
+                <p>
 					NeXt offers a comprehensive set of tools to leverage development and usage of real-world web applications.
 					A number of teams across networking leaders chose NeXt, thanks to a huge capability to satisfy network visualization needs.
 					The list of happy users includes Cisco, Verizon, AT&T, HP Enterprise, ZTE and NTS.
 					NeXt was born and raised at Cisco and is now a part of OpenDaylight ecosystem.</p>
+				<p>
+					Are we missing your app? <a href="#">Contact us</a> to have us add it to this list.
+				</p>
                 <hr class="my20"/>
 
-                <section class="content">
+                <!-- Start APIC-EM -->
+                <section class="content" id="showcase-apic-em">
                     <h2 class="f16">APIC-EM</h2>
                     <p>APIC-EM is an open network modeling & reporting toolkit that provides Fast & Flexible, object-based
                         network modeling for networks. NEXT was used by the project team to create network topolgies. </p>
-                    <p><a href="https://developer.cisco.com/site/apic-em/">Check out this app</a></p>
                     <p class="mt10"><img src="images/showcase/apic-em.jpg" alt="APIC-EM"/></p>
                     <div class="clear showcase-checkout-button">
                         <a href="https://developer.cisco.com/site/apic-em/"
@@ -65,11 +68,30 @@
                     <hr class="my20"/>
                 </section>
 
-                <section class="content">
+				<!-- Start VIRL -->
+				<section class="content" id="showcase-virl">
+					<h2 class="f16">VIRL</h2>
+					<p>Virtual Internet Routing Lab (VIRL) provides a scalable, extensible network design and simulation environment.
+						VIRL includes several Cisco Network Operating System virtual machines (IOSv, IOS-XRv, CSR1000v, NX-OSv, IOSvL2 and ASAv),
+						as well as Ubuntu Linux 14.04 LTS . There is also extensive ability to integrate with third-party vendor virtual machines.</p>
+					<p class="mt10"><img src="images/showcase/virl.png" alt="Virtual Internet Routing Lab (VIRL)"/></p>
+					<div class="clear showcase-checkout-button">
+						<a href="http://virl.cisco.com/"
+						   class="bg-orange f16 radius3 cf dib mt10 btnv1"
+						   style="padding:10px;"
+						   target="_blank">
+							Check this app out
+						</a>
+					</div>
+
+					<hr class="my20"/>
+				</section>
+
+                <!-- Start PCE-OF -->
+                <section class="content" id="showcase-pce-of">
                     <h2 class="f16">PCE-OF</h2>
-                    <p>OpenDaylight (ODL) is an open source application development and delivery platform
-                        (also referred to in some circles as a controller).
-                        Openflow is a protocol for programming flow tables on switches.
+                    <p>
+                        OpenFlow is a protocol for programming flow tables on switches.
                         Path Computation Element - OpenFlow (PCE-OF) is a new ODL application that applies policy-based
                         path computation and programming thus providing a level of "smart" traffic engineering to openflow networks.</p>
                     <p class="mt10"><img src="images/showcase/pce-of.png" alt="Path Computation Element - OpenFlow" style="border: solid #f0f0f0 2px"/></p>
@@ -78,15 +100,27 @@
                            class="bg-orange f16 radius3 cf dib mt10 btnv1"
                            style="padding:10px;"
                            target="_blank">
-                            Check this app outs
+                            Check this app out
                         </a>
                     </div>
+
+					<div class="clear showcase-checkout-button">
+						<a href="https://developer.cisco.com/site/opendaylight/discover/odl-at-cisco/build-apps-on-top-of-odl/index.gsp"
+						   class="bg-orange f16 radius3 cf dib mt10 btnv1"
+						   style="padding:10px;"
+						   target="_blank">
+							Check out other OpenDaylight apps
+						</a>
+					</div>
+
+
 
                     <hr class="my20"/>
                 </section>
 
-                <section class="content">
-                    <h2 class="f16 dib">LOKI</h2><a href="#" class="c-light-blue">https://loki.cisco.com</a>
+                <!-- Start Loki -->
+                <section class="content" id="showcase-loki">
+                    <h2 class="f16 dib">LOKI</h2>
 
                     <p>This app is an open network modeling & reporting toolkit that provides Fast & Flexible, object-based
                         network modeling for networks. NEXT was used by the project team to create network topolgies. </p>
@@ -94,7 +128,6 @@
                     <p class="mt10"><img src="images/showcase/apic-em.jpg" alt=""/></p>
                     <hr class="my20"/>
                 </section>
-
 
             </div>
         </div>

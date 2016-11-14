@@ -100,9 +100,7 @@ def insert_footer(f):
                 $( ".example-content" ).css( "display", "none" );
                 // toggle on one
                 selectedEl.slideDown( "slow" );
-                $('html, body').animate({
-                    scrollTop: selectedEl.offset().top
-                }, 1000);
+                scrollToId( "example-content-" + trailingId );
             }
             else {
                 selectedEl.slideUp( "slow" );
