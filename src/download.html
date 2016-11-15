@@ -12,12 +12,9 @@
             <div class="p10">
                 <nav class="m-side-nav">
                     <ul>
-                        <li class="active"><a href="#" onclick="scrollToId('download-next')">0.7.3 Download</a></li>
-                        <li class="active"><a href="#" onclick="scrollToId('release-0-6')">0.6 Release note</a></li>
-                        <li class="active"><a href="#" onclick="scrollToId('release-0-5')">0.5 Release note</a></li>
-                        <li class="active"><a href="#" onclick="scrollToId('release-0-4')">0.4 Release note</a></li>
-                        <li class="active"><a href="#" onclick="scrollToId('release-0-3')">0.3 Release note</a></li>
-                        <li class="active"><a href="#" onclick="scrollToId('release-0-2')">0.2 Release note</a></li>
+                        <li class="active"><a href="#" onclick="scrollToId('download-next')">Download Latest</a></li>
+                        <li class="active"><a href="#" onclick="scrollToId('release-0-9')">0.9 Release note</a></li>
+                        <li class="active"><a href="#" onclick="scrollToId('release-0-8')">0.8 Release note</a></li>
                     </ul>
                 </nav>
                 <section class="p20">
@@ -45,7 +42,7 @@
                         Download NEXT
                     </a>
 
-                    <p class="c0 mt10">Latest: v1.0.0_2015/03/12_23Mb</p>
+                    <p class="c0 mt10">Latest: 0.9 (x Mb)</p>
                 </section>
                 <hr class="my20"/>
                 <!-- Bower / NPM installation -->
@@ -61,51 +58,96 @@
                     npm install next-bower
                 </code>
 
+                <!-- Release note: 0.9 -->
                 <hr class="my20"/>
-                <h2 class="f16" id="release-0-6">0.6 Release note</h2>
+                <h2 class="f16" id="release-0-9">0.9 Release note</h2>
                 <div class="hd c6">
-                    <p>Topology</p>
-                    <p><i class="mr5">•</i>Support Firefox (30+)</p>
+                    <p>Major Features</p>
+                    <ul class="padded-ul">
+                        <li>World Map support <strong>added</strong></li>
+                        <li>NodeSet path support <strong>added</strong></li>
+                        <li>Performance <strong>improved</strong></li>
+                        <li>API documentation <strong>improved</strong></li>
+                    </ul>
 
-                    <p class="mt10">Known Issues</p>
-                    <p><i class="mr5">•</i>[Core] Temporary don't support IE</p>
+                    <p class="mt10">Target Environment</p>
+                    For Execution<br>
+                    <ul class="padded-ul">
+                        <li>Firefox 42</li>
+                        <li>Chrome 38</li>
+                        <li>Safari 8</li>
+                    </ul>
+
+                    For Development<br>
+                    <ul class="padded-ul">
+                        <li>Grunt (http://gruntjs.com/)</li>
+                        <li>NodeJS (https://nodejs.org/en/)</li>
+                        <li>Qunit</li>
+                    </ul>
+
+                    Changes Since Previous Releases<br>
+                    Bugs Fixed in this Release<br>
+                    <ul class="padded-ul">
+                        <li>addVertexSet issue</li>
+                        <li>Firefox css addRule bug</li>
+                        <li>Typos</li>
+                    </ul>
+
+                    <i class="fa fa-check-circle-o c-green" aria-hidden="true"></i> Compatible with previous release
                 </div>
+
+                <!-- Release note: 0.8 -->
                 <hr class="my20"/>
-                <h2 class="f16" id="release-0-5">0.5 Release note</h2>
+                <h2 class="f16" id="release-0-8">0.8 Release note</h2>
                 <div class="hd c6">
-                    <p>Topology</p>
-                    <p><i class="mr5">•</i>Support Firefox (30+)</p>
 
-                    <p class="mt10">Known Issues</p>
-                    <p><i class="mr5">•</i>[Core] Temporary don't support IE</p>
-                </div>
-                <hr class="my20"/>
-                <h2 class="f16" id="release-0-4">0.4 Release note</h2>
-                <div class="hd c6">
-                    <p>Topology</p>
-                    <p><i class="mr5">•</i>Support Firefox (30+)</p>
 
-                    <p class="mt10">Known Issues</p>
-                    <p><i class="mr5">•</i>[Core] Temporary don't support IE</p>
-                </div>
-                <hr class="my20"/>
-                <h2 class="f16" id="release-0-3">0.3 Release note</h2>
-                <div class="hd c6">
-                    <p>Topology</p>
-                    <p><i class="mr5">•</i>Support Firefox (30+)</p>
+                    <p>Major Features</p>
+                    Beryllium release of NeXt project provides a network-centric topology UI that offers visualizations of the following:
+                    <ul class="padded-ul">
+                        <li>Large complex network topologies <strong>supported</strong></li>
+                        <li>Aggregated network nodes functionality <strong>added</strong></li>
+                        <li>Traffic/path/tunnel/group visualizations <strong>added</strong></li>
+                        <li>Different layout algorithms <strong>added</strong></li>
+                        <li>Map overlays support <strong>added</strong></li>
+                        <li>Preset user-friendly interactions <strong>added</strong></li>
+                    </ul>
 
-                    <p class="mt10" >Known Issues</p>
-                    <p><i class="mr5">•</i>[Core] Temporary don't support IE</p>
-                </div>
-                <hr class="my20"/>
-                <h2 class="f16" id="release-0-2">0.2 Release note</h2>
-                <div class="hd c6">
-                    <p>Topology</p>
-                    <p><i class="mr5">•</i>Support Firefox (30+)</p>
+                    <p class="mt10">Target Environment</p>
+                    Requires latest version of Chrome/Firefox
 
-                    <p class="mt10">Known Issues</p>
-                    <p><i class="mr5">•</i>[Core] Temporary don't support IE</p>
+                    For Development<br>
+                    <ul class="padded-ul">
+                        <li>GNU
+                            <ul class="padded-ul">
+                                <li>Coreutils</li>
+                                <li>Findutils</li>
+                                <li>SED</li>
+                                <li>Make</li>
+                            </ul>
+                        </li>
+                        <li>NodeJS & NPM
+                            <ul class="padded-ul">
+                                <li>PhantomJS</li>
+                                <li>LESS</li>
+                                <li>YUIDoc</li>
+                                <li>Uglify</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    Changes Since Previous Releases<br>
+                    Bugs Fixed in this Release<br>
+
+
+                    <p>Known Issues and Limitations</p>
+                    <ul class="padded-ul">
+                        <li>Not support IE in the version</li>
+                    </ul>
+
+
                 </div>
+
                 <hr class="my20"/>
             </div>
         </div>
