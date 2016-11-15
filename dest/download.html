@@ -9,6 +9,8 @@
 	<script src="vendor/jquery/dist/jquery.min.js"></script>
 	<!--bootstrap end-->
 
+	<link rel="stylesheet" href="vendor/hover/css/hover-min.css">
+
 	<!--[if lt IE 9]>
 	<script src="vendor/html5shiv/dist/html5shiv.js"></script>
 	<![endif]-->
@@ -77,7 +79,7 @@
             <div class="tl p10 mr50" id="download-next">
                 <p class="f16 lh20">Download NEXT now, and enjoy building web apps with this fantastic framework. </p>
                 <section class="tc mt20">
-                    <a href="#" class="bg-light-blue cf dib mt10 bold" style="padding:10px;">
+                    <a href="#" class="bg-light-blue cf dib mt10 bold btnv2 hvr-grow" style="padding:10px;">
                         <i class="fa fa-download" aria-hidden="true"></i> Download NEXT
                     </a>
 
@@ -90,7 +92,8 @@
 
                 <!-- Bower/npm -->
                 <section>
-                    <h2 class="f16">Bower/npm installation</h2>
+                    <h3 class="f20">Bower/npm installation</h3>
+					<img src="images/logos/bower-npm-logos.png" alt="Bower & NPM logo" style="width: 100px;">
                     <p>
                         To install the framework with Bower, navigate to your project's folder and run in terminal:<br>
                         <code>
@@ -108,34 +111,34 @@
 
                 <!-- Release note: 0.9 -->
                 <hr class="my20"/>
-                <h2 class="f16" id="release-0-9">0.9 Release note</h2>
+                <h3 class="f20" id="release-0-9">0.9 Release note</h3>
                 <div class="hd c6">
-                    <p>Major Features</p>
-                    <ul class="padded-ul">
+
+					<h4 class="f18">Major Features</h4>
+                    <ul class="padded-ul mb10">
                         <li>World Map support <strong>added</strong></li>
                         <li>NodeSet path support <strong>added</strong></li>
                         <li>Performance <strong>improved</strong></li>
                         <li>API documentation <strong>improved</strong></li>
                     </ul>
 
-                    <p class="mt10">Target Environment</p>
-                    For Execution<br>
-                    <ul class="padded-ul">
+					<h4 class="f18">Target Environment</h4>
+					<h5 class="f16">For Execution</h5>
+                    <ul class="padded-ul mb10">
                         <li>Firefox 42</li>
                         <li>Chrome 38</li>
                         <li>Safari 8</li>
                     </ul>
 
-                    For Development<br>
-                    <ul class="padded-ul">
+					<h5 class="f16">For Development</h5>
+                    <ul class="padded-ul mb10">
                         <li>Grunt (http://gruntjs.com/)</li>
                         <li>NodeJS (https://nodejs.org/en/)</li>
                         <li>Qunit</li>
                     </ul>
 
-                    Changes Since Previous Releases<br>
-                    Bugs Fixed in this Release<br>
-                    <ul class="padded-ul">
+					<h4 class="f18">Bugs Fixed in this Release</h4>
+                    <ul class="padded-ul mb10">
                         <li>addVertexSet issue</li>
                         <li>Firefox css addRule bug</li>
                         <li>Typos</li>
@@ -146,13 +149,12 @@
 
                 <!-- Release note: 0.8 -->
                 <hr class="my20"/>
-                <h2 class="f16" id="release-0-8">0.8 Release note</h2>
+                <h3 class="f20" id="release-0-8">0.8 Release note</h3>
                 <div class="hd c6">
 
-
-                    <p>Major Features</p>
-                    Beryllium release of NeXt project provides a network-centric topology UI that offers visualizations of the following:
-                    <ul class="padded-ul">
+					<h4 class="f18">Major Features</h4>
+                    <p>Beryllium release of NeXt project provides a network-centric topology UI that offers visualizations of the following:</p>
+                    <ul class="padded-ul mb10">
                         <li>Large complex network topologies <strong>supported</strong></li>
                         <li>Aggregated network nodes functionality <strong>added</strong></li>
                         <li>Traffic/path/tunnel/group visualizations <strong>added</strong></li>
@@ -161,11 +163,16 @@
                         <li>Preset user-friendly interactions <strong>added</strong></li>
                     </ul>
 
-                    <p class="mt10">Target Environment</p>
-                    Requires latest version of Chrome/Firefox
 
-                    For Development<br>
-                    <ul class="padded-ul">
+
+					<h4 class="f18">Target Environment</h4>
+					<h5 class="f16">For Execution</h5>
+                    <ul class="padded-ul mb10">
+						<li>Requires latest version of Chrome/Firefox</li>
+					</ul>
+
+					<h5 class="f16">For Development</h5>
+                    <ul class="padded-ul mb10">
                         <li>GNU
                             <ul class="padded-ul">
                                 <li>Coreutils</li>
@@ -184,12 +191,8 @@
                         </li>
                     </ul>
 
-                    Changes Since Previous Releases<br>
-                    Bugs Fixed in this Release<br>
-
-
-                    <p>Known Issues and Limitations</p>
-                    <ul class="padded-ul">
+					<h4 class="f18">Known Issues and Limitations</h4>
+                    <ul class="padded-ul mb10">
                         <li>Not support IE in the version</li>
                     </ul>
 
