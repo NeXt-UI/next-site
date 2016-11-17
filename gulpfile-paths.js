@@ -24,6 +24,10 @@ var Paths = function(){
 			"pages": {
 				"src": "/*.html",
 				"dest": "/"
+			},
+			"yuidocs": {
+				"src": "/yui-docs/**",
+				"dest": "/yui-docs/"
 			}
 		},
 

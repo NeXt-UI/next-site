@@ -1,42 +1,10 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="libs/font-awesome-4.3.0/css/font-awesome.min.css" />
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="libs/jquery/jquery-1.11.0.js"></script>
-    <!--bootstrap end-->
-    <!-–[if lt IE 9]-->
-    <script type="text/javascript" src="http://www.cdnjs.net/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
-    <!--[endif]–- >
-        <!--app style start-->
-    <link rel="stylesheet" type="text/css" href="../dest/css/style.css"/>
-    <!--app style end-->
-    <script type="text/javascript">
-        window.onload = function () {
-            document.querySelector('.wrap').style.minHeight = (document.body.scrollHeight - 130) + 'px';
-        };
+@@include('_head.html')
+@@include('_nav.html', {
+"navActiveItem": "docs"
+})
 
-    </script>
-</head>
-<body>
-<nav class="bg0 m-header">
-    <header class="hlh60  cf l_ px20 auto" style="width:980px">
-        <h1 class="f30 mr50">
-            <img src="images/logo.svg" />
-        </h1>
-        <span class="r link-f_ f16 mr20_">
-            <a href="./index.html">Home</a>
-            <a href="examples.html">Example</a>
-            <a href="./show-case.html">Showcase</a>
-            <a class="active" href="./docs.html">DOC <i class="fa fa-caret-down"></i></a>
-            <a href="./download.html">Download</a>
-        </span>
-    </header>
-</nav>
 <div class="auto wrap">
-    <iframe src="yui-docs/docs/index.html" frameborder="0" scrolling="no" id="iframe"
+    <iframe src="./yui-docs/docs/index.html" frameborder="0" scrolling="no" id="iframe"
             class="m-yui-iframe" style="min-height: 600px"></iframe>
 </div>
 

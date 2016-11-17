@@ -1,42 +1,52 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="libs/font-awesome-4.3.0/css/font-awesome.min.css" />
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="libs/jquery/jquery-1.11.0.js"></script>
-    <!--bootstrap end-->
-    <!-–[if lt IE 9]-->
-    <script type="text/javascript" src="http://www.cdnjs.net/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
-    <!--[endif]–- >
-        <!--app style start-->
-    <link rel="stylesheet" type="text/css" href="../dest/css/style.css"/>
-    <!--app style end-->
-    <script type="text/javascript">
-        window.onload = function () {
-            document.querySelector('.wrap').style.minHeight = (document.body.scrollHeight - 130) + 'px';
-        };
+	<meta charset="UTF-8">
+	<title>NeXt UI Framework</title>
+	<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/font-awesome.min.css" />
 
-    </script>
+	<!--Latest compiled and minified JavaScript-->
+	<script src="vendor/jquery/dist/jquery.min.js"></script>
+	<!--bootstrap end-->
+
+	<link rel="stylesheet" href="vendor/hover/css/hover-min.css">
+
+	<!--[if lt IE 9]>
+	<script src="vendor/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
+
+	<!--app style start-->
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<!--app style end-->
 </head>
 <body>
-<nav class="bg0 m-header">
-    <header class="hlh60  cf l_ px20 auto" style="width:980px">
-        <h1 class="f30 mr50">
-            <img src="images/logo.svg" />
-        </h1>
-        <span class="r link-f_ f16 mr20_">
-            <a href="./index.html">Home</a>
-            <a href="examples.html">Example</a>
-            <a href="./show-case.html">Showcase</a>
-            <a class="active" href="./docs.html">DOC <i class="fa fa-caret-down"></i></a>
-            <a href="./download.html">Download</a>
+<nav class="bg0 rel m-header">
+	<header class="hlh60 rel cf l_ px20 auto" style="width:980px">
+        <span class="f30 mr50">
+            <!--<img src="images/OpenDaylight_logo.png" alt="OpenDaylight Logo" class="logo-image">-->
+            <a href=".">
+				<img src="images/logo.svg" alt="NeXt Logo" class="logo-image"/>
+			</a>
         </span>
-    </header>
+		<span class="r link-f_ f16 mr20_">
+            <a  href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+            <a  href="./examples.html"><i class="fa fa-code" aria-hidden="true"></i> Examples</a>
+            <a  href="./show-case.html"><i class="fa fa-star" aria-hidden="true"></i> Showcase</a>
+            <a class="js-docs 
+  						active
+					" href="javascript:;"><i class="fa fa-book" aria-hidden="true"></i> Docs <i class="fa fa-caret-down"></i></a>
+			<a  href="./contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
+            <a  href="./download.html"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+        </span>
+		<ul class="m-dropdown-menu" role="menu">
+			<li><a role="menuitem" tabindex="-1" href="https://github.com/NeXt-UI/next-tutorials" target="_blank">Tutorials</a></li>
+			<li><a role="menuitem" tabindex="-1" href="./docs.html">API</a></li>
+		</ul>
+	</header>
 </nav>
+
 <div class="auto wrap">
-    <iframe src="yui-docs/docs/index.html" frameborder="0" scrolling="no" id="iframe"
+    <iframe src="./yui-docs/docs/index.html" frameborder="0" scrolling="no" id="iframe"
             class="m-yui-iframe" style="min-height: 600px"></iframe>
 </div>
 

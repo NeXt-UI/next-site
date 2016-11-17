@@ -56,16 +56,21 @@ gulp.task("build:examples.html", function(){
 
 // build HTML
 gulp.task("build:html", function(){
-	return gulp.src(paths.src("html.pages"))
+	// copy main HTML files
+	gulp.src(paths.src("html.pages"))
 		.pipe(fileInclude({
 			prefix: "@@",
 			basepath: "@file",
 			context: {
 				navActiveItem: ""
 			}
-
 		}))
 		.pipe(gulp.dest(paths.dest("html.pages")));
+
+	// copy the rest
+	return gulp.src(paths.src("html.yuidocs"))
+		.pipe(gulp.dest(paths.dest("html.yuidocs")));
+
 });
 
 // build LESS files into CSS

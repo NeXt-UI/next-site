@@ -16,7 +16,12 @@
             <a @@if (navActiveItem === "showcase") {
   						class="active"
 					} href="./show-case.html"><i class="fa fa-star" aria-hidden="true"></i> Showcase</a>
-            <a class="js-docs" href="javascript:;"><i class="fa fa-book" aria-hidden="true"></i> Docs <i class="fa fa-caret-down"></i></a>
+            <a class="js-docs @@if (navActiveItem === "docs") {
+  						active
+					}" href="javascript:;"><i class="fa fa-book" aria-hidden="true"></i> Docs <i class="fa fa-caret-down"></i></a>
+			<a @@if (navActiveItem === "contact") {
+  						class="active"
+					} href="./contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
             <a @@if (navActiveItem === "download") {
   						class="active"
 					} href="./download.html"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
