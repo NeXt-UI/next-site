@@ -49,7 +49,30 @@
 <div class="auto wrap">
 
 	<p>Hi, we're glad to hear from you! Drop us a line, and we'll reach out to you shortly.</p>
-	<p>If you need community help, send an email into the mailer: <a href="mailto:next-dev@lists.opendaylight.org">next-dev@lists.opendaylight.org</a></p>
+	<p>If you need community help, send an email into the mailer:
+		<a href="mailto:next-dev@lists.opendaylight.org">next-dev@lists.opendaylight.org</a>
+	</p>
+
+	<section class="tc feedback-form">
+		<form>
+			<div>
+				<label for="name">Your Name</label><br>
+				<input type="text" id="name" name="name">
+			</div>
+			<div>
+				<label for="contacts">Best way to reach out to you?</label><br>
+				<input type="text" id="contacts" name="contacts" placeholder="Email, telephone...?">
+			</div>
+			<div>
+				<label for="message">Your Message</label><br>
+				<textarea id="message" name="message" placeholder="Idea, problem...?"></textarea>
+			</div>
+			<div>
+				<button class=""><i class="fa fa-paper-plane" aria-hidden="true"></i> Send</button>
+			</div>
+		</form>
+	</section>
+
 
 </div>
 

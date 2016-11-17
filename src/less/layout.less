@@ -303,16 +303,17 @@ hr {
 }
 
 .example-content {
-  background: #f3f3f3;
-  max-height: 650px;
-  padding: 5px 20px 15px 20px;
-  border-top: solid #30aab7 5px;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 
-
+  & {
+	background: #f3f3f3;
+	max-height: 650px;
+	padding: 5px 20px 15px 20px;
+	border-top: solid #30aab7 5px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  }
 
   &-button-block {
 	text-align: center;
@@ -346,6 +347,16 @@ hr {
   padding: 10px 0;
 }
 
+.feedback-form {
+  form div {
+	padding: 10px 0;
+  }
 
+  label {
+	text-transform: capitalize;
+  }
+
+
+}
 
 /**layout  End**/
