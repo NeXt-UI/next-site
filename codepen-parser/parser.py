@@ -58,6 +58,12 @@ def parse_collection(collection_id):
     cat_link = {
         "basic": {
             "label": "Basic"
+        },
+        "path": {
+            "label": "Paths"
+        },
+        "topomods": {
+            "label": "Topology Modifications"
         }
     }
 

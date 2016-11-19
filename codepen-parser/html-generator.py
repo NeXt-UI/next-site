@@ -6,7 +6,7 @@ items_in_row = 2  # max number of items in a row
 
 collection_content = parser.parse_collection(collection_id="nMWevE")
 category_order = [
-    "basic", "path"
+    "basic", "topomods", "path"
 ]
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
