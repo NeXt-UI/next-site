@@ -60,6 +60,12 @@ var Paths = function(){
 		"vendor": {
 			"src": "/vendor/**/*.*",
 			"dest": "/vendor/"
+		},
+
+		// zip files
+		"files": {
+			"src": "/files/**/*.*",
+			"dest": "/files/"
 		}
 	};
 

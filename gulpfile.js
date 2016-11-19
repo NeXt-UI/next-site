@@ -35,7 +35,8 @@ gulp.task("clean-fast", function (cb) {
 		[
 			paths.dest() + "/**",
 			"!" + paths.dest(),
-			"!" + paths.dest("vendor") + "**"
+			"!" + paths.dest("vendor") + "**",
+			"!" + paths.dest("files") + "**"
 		],
 		{
 			force: true
@@ -107,11 +108,17 @@ gulp.task("build:vendor", function(){
 		.pipe(gulp.dest(paths.dest("vendor")));
 });
 
+// bundle zip files of NeXt
+gulp.task("build:files", function(){
+	return gulp.src(paths.src("files"))
+		.pipe(gulp.dest(paths.dest("files")));
+});
+
 // full clean & build
 gulp.task("build-full", function(){
 	return runSequence(
 		"clean-full",
-		["build:less", "build:js", "build:images", "build:fonts", "build:vendor", "build:examples.html"],
+		["build:less", "build:js", "build:images", "build:fonts", "build:vendor", "build:examples.html", "build:files"],
 		"build:html"
 	);
 });
