@@ -15,11 +15,13 @@ var messageConfig = {
 	"subject": "Feedback from website",
 	"recipients": [
 		"alzverev@cisco.com",
-		//"aaikepae@cisco.com"
+		"aaikepae@cisco.com"
 	],
-	text: "test"
+	text: ""
 
 };
+
+var result = {};
 
 if (argv.hasOwnProperty("u") && argv.hasOwnProperty("p") && argv.hasOwnProperty("s")) {
 
@@ -33,10 +35,60 @@ if (argv.hasOwnProperty("u") && argv.hasOwnProperty("p") && argv.hasOwnProperty(
 		version: '1.0.0'
 	});
 
+	// avoid CORS restrictions
+	restServer.use(restify.CORS({
+		origins: ['*'],   // defaults to ['*']
+		credentials: true,                 // defaults to false
+		headers: ['*']
+	}));
+
+	// allow to process JSON
+	restServer.use(restify.jsonp());
+	restServer.use(restify.bodyParser());
+
 	// receive POST request
-	restServer.post("/contact/", function (req, res, next) {
-		//sendMail(smtpConfig, messageConfig);
-		console.log(req, res);
+	restServer.post("/", function (req, res, next) {
+		var params = req.params;
+
+		// validate
+		if (typeof params.name == "string" &&
+			typeof params.contacts == "string" &&
+			typeof params.message == "string") {
+
+			if (params.name.length > 0 && params.name.length <= 100 &&
+				params.contacts.length > 0 && params.contacts.length <= 200 &&
+				params.message.length > 0 && params.message.length <= 2000) {
+
+				// make up a message
+				messageConfig.message =
+					"Message from " + params.name + "\n\n" +
+					"Contact them by: " + params.contacts + "\n\n" +
+					params.message;
+
+				// send email
+				sendMail(smtpConfig, messageConfig);
+
+				result = {
+					"status": "ok",
+					"text": "Message has been sent."
+				}
+
+			}
+			else{
+				result = {
+					"status": "fail",
+					"text": "All fields must be completed. Please do not exceed 100/200/2000-character limit."
+				}
+			}
+		}
+		else{
+			result = {
+				"status": "fail",
+				"text": "Invalid format"
+			}
+		}
+
+		res.send(result);
 		return next();
 	});
 
@@ -62,15 +114,17 @@ function sendMail(smtpConfig, messageConfig) {
 		from: '"' + messageConfig.fromString + '" <' + smtpConfig.username + '>', // sender address
 		to: messageConfig.recipients.join(","), // list of receivers
 		subject: messageConfig.subject, // Subject line
-		text: messageConfig.text // plaintext body
+		text: messageConfig.message // plaintext body
 	};
 
 	// send mail with defined transport object
 	transporter.sendMail(mailOptions, function (error, info) {
 		if (error) {
-			return console.log(error);
+			console.log(error);
+			return false;
 		}
 		console.log('Message sent: ' + info.response);
+		return true;
 	});
 
 }
