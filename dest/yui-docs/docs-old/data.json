@@ -1,0 +1,3055 @@
+{
+    "project": {
+        "name": "Next Core",
+        "description": "Next Core API docs",
+        "version": "0.1",
+        "url": "index.html"
+    },
+    "files": {
+        "src/data/Collection.js": {
+            "name": "src/data/Collection.js",
+            "modules": {},
+            "classes": {
+                "nx.data.Collection": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "nx.data": 1
+            }
+        },
+        "src/data/Dictionary.js": {
+            "name": "src/data/Dictionary.js",
+            "modules": {},
+            "classes": {
+                "nx.data.Dictionary": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "nx.data": 1
+            }
+        },
+        "src/data/ObservableCollection.js": {
+            "name": "src/data/ObservableCollection.js",
+            "modules": {},
+            "classes": {
+                "nx.data.ObservableCollection": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "nx.data": 1
+            }
+        },
+        "src/data/ObservableDictionary.js": {
+            "name": "src/data/ObservableDictionary.js",
+            "modules": {},
+            "classes": {
+                "nx.data.ObservableDictionary": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "nx.data": 1
+            }
+        },
+        "src/data/ObservableObject.js": {
+            "name": "src/data/ObservableObject.js",
+            "modules": {},
+            "classes": {
+                "nx.data.ObservableObject": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "nx.data": 1
+            }
+        },
+        "src/data/Query.js": {
+            "name": "src/data/Query.js",
+            "modules": {},
+            "classes": {
+                "nx.data.Query": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "nx.data": 1
+            }
+        },
+        "src/data/SortedMap.js": {
+            "name": "src/data/SortedMap.js",
+            "modules": {},
+            "classes": {
+                "nx.data.SortedMap": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "nx.data": 1
+            }
+        },
+        "src/Comparable.js": {
+            "name": "src/Comparable.js",
+            "modules": {},
+            "classes": {
+                "nx.Comparable": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "nx": 1
+            }
+        },
+        "src/Iterable.js": {
+            "name": "src/Iterable.js",
+            "modules": {},
+            "classes": {
+                "nx.Iterable": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "nx": 1
+            }
+        },
+        "src/Observable.js": {
+            "name": "src/Observable.js",
+            "modules": {},
+            "classes": {
+                "nx.Observable": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "nx": 1
+            }
+        },
+        "src/Serializable.js": {
+            "name": "src/Serializable.js",
+            "modules": {},
+            "classes": {
+                "nx.Serializable": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "nx": 1
+            }
+        },
+        "src/base.js": {
+            "name": "src/base.js",
+            "modules": {
+                "nx": 1
+            },
+            "classes": {
+                "nx": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src/class.js": {
+            "name": "src/class.js",
+            "modules": {},
+            "classes": {
+                "nx.Object": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "nx": {
+            "name": "nx",
+            "submodules": {},
+            "classes": {
+                "nx.data.Collection": 1,
+                "nx.data.Dictionary": 1,
+                "nx.data.ObservableCollection": 1,
+                "nx.data.ObservableDictionary": 1,
+                "nx.data.ObservableObject": 1,
+                "nx.data.Query": 1,
+                "nx.data.SortedMap": 1,
+                "nx.Comparable": 1,
+                "nx.Iterable": 1,
+                "nx.Observable": 1,
+                "nx.Serializable": 1,
+                "nx": 1,
+                "nx.Object": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src/class.js",
+            "line": 10
+        }
+    },
+    "classes": {
+        "nx.data.Collection": {
+            "name": "nx.data.Collection",
+            "shortname": "nx.data.Collection",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "nx",
+            "namespace": "nx.data",
+            "file": "src/data/Collection.js",
+            "line": 4,
+            "extends": "nx.Iterable",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "iter",
+                    "description": ""
+                }
+            ]
+        },
+        "nx.data.Dictionary": {
+            "name": "nx.data.Dictionary",
+            "shortname": "nx.data.Dictionary",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "nx",
+            "namespace": "nx.data",
+            "file": "src/data/Dictionary.js",
+            "line": 51,
+            "extends": "nx.Iterable",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "dict",
+                    "description": ""
+                }
+            ]
+        },
+        "nx.data.ObservableCollection": {
+            "name": "nx.data.ObservableCollection",
+            "shortname": "nx.data.ObservableCollection",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "nx",
+            "namespace": "nx.data",
+            "file": "src/data/ObservableCollection.js",
+            "line": 3,
+            "extends": "nx.data.Collection",
+            "uses": [
+                "nx.Observable"
+            ]
+        },
+        "nx.data.ObservableDictionary": {
+            "name": "nx.data.ObservableDictionary",
+            "shortname": "nx.data.ObservableDictionary",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "nx",
+            "namespace": "nx.data",
+            "file": "src/data/ObservableDictionary.js",
+            "line": 27,
+            "extends": "nx.data.Dictionary",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "dict",
+                    "description": ""
+                }
+            ]
+        },
+        "nx.data.ObservableObject": {
+            "name": "nx.data.ObservableObject",
+            "shortname": "nx.data.ObservableObject",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "nx",
+            "namespace": "nx.data",
+            "file": "src/data/ObservableObject.js",
+            "line": 3,
+            "extends": "nx.Observable"
+        },
+        "nx.data.Query": {
+            "name": "nx.data.Query",
+            "shortname": "nx.data.Query",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "nx",
+            "namespace": "nx.data",
+            "file": "src/data/Query.js",
+            "line": 10,
+            "extends": "nx.Iterable"
+        },
+        "nx.data.SortedMap": {
+            "name": "nx.data.SortedMap",
+            "shortname": "nx.data.SortedMap",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "nx",
+            "namespace": "nx.data",
+            "file": "src/data/SortedMap.js",
+            "line": 3,
+            "uses": [
+                "nx.Observable"
+            ],
+            "params": [
+                {
+                    "name": "data",
+                    "description": "The initial data of SortedMap, which is an array of objects with properties \"key\" and \"value\"."
+                }
+            ]
+        },
+        "nx.Comparable": {
+            "name": "nx.Comparable",
+            "shortname": "nx.Comparable",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "nx",
+            "namespace": "nx",
+            "file": "src/Comparable.js",
+            "line": 3
+        },
+        "nx.Iterable": {
+            "name": "nx.Iterable",
+            "shortname": "nx.Iterable",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "nx",
+            "namespace": "nx",
+            "file": "src/Iterable.js",
+            "line": 3
+        },
+        "nx.Observable": {
+            "name": "nx.Observable",
+            "shortname": "nx.Observable",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [
+                "nx.data.ObservableCollection",
+                "nx.data.SortedMap"
+            ],
+            "module": "nx",
+            "namespace": "nx",
+            "file": "src/Observable.js",
+            "line": 2
+        },
+        "nx.Serializable": {
+            "name": "nx.Serializable",
+            "shortname": "nx.Serializable",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "nx",
+            "namespace": "nx",
+            "file": "src/Serializable.js",
+            "line": 2
+        },
+        "nx": {
+            "name": "nx",
+            "shortname": "nx",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "nx",
+            "namespace": "",
+            "file": "src/base.js",
+            "line": 24,
+            "static": 1
+        },
+        "nx.Object": {
+            "name": "nx.Object",
+            "shortname": "nx.Object",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "nx",
+            "namespace": "",
+            "file": "src/class.js",
+            "line": 10,
+            "description": "The base of any Classes defined in nx framework.",
+            "is_constructor": 1
+        }
+    },
+    "classitems": [
+        {
+            "file": "src/data/Collection.js",
+            "line": 13,
+            "itemtype": "property",
+            "name": "count",
+            "type": "{Number}",
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 25,
+            "itemtype": "property",
+            "name": "length",
+            "type": "{Number}",
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 69,
+            "description": "Add an item.",
+            "itemtype": "method",
+            "name": "add",
+            "params": [
+                {
+                    "name": "item",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "added item. Null if fail to add, e.g. duplicated add into unique collection."
+            },
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 83,
+            "description": "Add multiple items. Will avoid duplicated items for unique collection.",
+            "itemtype": "method",
+            "name": "addRange",
+            "params": [
+                {
+                    "name": "iter",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "array of added items."
+            },
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 104,
+            "itemtype": "method",
+            "name": "remove",
+            "params": [
+                {
+                    "name": "item",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "Removed item's index, -1 if not found."
+            },
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 130,
+            "itemtype": "method",
+            "name": "removeAt",
+            "params": [
+                {
+                    "name": "index",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "Removed item."
+            },
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 138,
+            "itemtype": "method",
+            "name": "insert",
+            "params": [
+                {
+                    "name": "item",
+                    "description": ""
+                },
+                {
+                    "name": "index",
+                    "description": ""
+                }
+            ],
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 150,
+            "itemtype": "method",
+            "name": "insertRange",
+            "params": [
+                {
+                    "name": "index",
+                    "description": ""
+                },
+                {
+                    "name": "iter",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*"
+            },
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 170,
+            "itemtype": "method",
+            "name": "clear",
+            "return": {
+                "description": "",
+                "type": "*"
+            },
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 179,
+            "itemtype": "method",
+            "name": "getItem",
+            "params": [
+                {
+                    "name": "index",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*"
+            },
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 187,
+            "itemtype": "method",
+            "name": "getRange",
+            "params": [
+                {
+                    "name": "index",
+                    "description": ""
+                },
+                {
+                    "name": "count",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Collection"
+            },
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 196,
+            "description": "Get the first index the given item appears in the collection, -1 if not found.",
+            "itemtype": "method",
+            "name": "indexOf",
+            "params": [
+                {
+                    "name": "item",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*"
+            },
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 216,
+            "itemtype": "method",
+            "name": "lastIndexOf",
+            "params": [
+                {
+                    "name": "item",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*"
+            },
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 235,
+            "itemtype": "method",
+            "name": "contains",
+            "params": [
+                {
+                    "name": "item",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 243,
+            "description": "Toggle item's existence.",
+            "itemtype": "method",
+            "name": "toggle",
+            "params": [
+                {
+                    "name": "item",
+                    "description": ""
+                }
+            ],
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 261,
+            "itemtype": "method",
+            "name": "sort",
+            "params": [
+                {
+                    "name": "comp",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Array"
+            },
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 269,
+            "itemtype": "method",
+            "name": "each",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": ""
+                },
+                {
+                    "name": "context",
+                    "description": ""
+                }
+            ],
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Collection.js",
+            "line": 277,
+            "itemtype": "method",
+            "name": "toArray",
+            "return": {
+                "description": "",
+                "type": "Array"
+            },
+            "class": "nx.data.Collection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Dictionary.js",
+            "line": 60,
+            "itemtype": "property",
+            "name": "count",
+            "type": "{Number}",
+            "class": "nx.data.Dictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Dictionary.js",
+            "line": 69,
+            "itemtype": "property",
+            "name": "keys",
+            "type": "{Iterable}",
+            "class": "nx.data.Dictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Dictionary.js",
+            "line": 78,
+            "itemtype": "property",
+            "name": "values",
+            "type": "{Iterable}",
+            "class": "nx.data.Dictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Dictionary.js",
+            "line": 96,
+            "itemtype": "method",
+            "name": "contains",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "nx.data.Dictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Dictionary.js",
+            "line": 104,
+            "itemtype": "method",
+            "name": "getItem",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*"
+            },
+            "class": "nx.data.Dictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Dictionary.js",
+            "line": 113,
+            "itemtype": "method",
+            "name": "setItem",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "description": "",
+                    "type": "Any"
+                }
+            ],
+            "class": "nx.data.Dictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Dictionary.js",
+            "line": 127,
+            "itemtype": "method",
+            "name": "setItems",
+            "params": [
+                {
+                    "name": "dict",
+                    "description": "",
+                    "type": "Dictionary|Object"
+                }
+            ],
+            "class": "nx.data.Dictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Dictionary.js",
+            "line": 138,
+            "itemtype": "method",
+            "name": "removeItem",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "class": "nx.data.Dictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Dictionary.js",
+            "line": 156,
+            "itemtype": "method",
+            "name": "clear",
+            "class": "nx.data.Dictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Dictionary.js",
+            "line": 168,
+            "itemtype": "method",
+            "name": "each",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "class": "nx.data.Dictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Dictionary.js",
+            "line": 179,
+            "itemtype": "method",
+            "name": "toArray",
+            "return": {
+                "description": "",
+                "type": "Array"
+            },
+            "class": "nx.data.Dictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Dictionary.js",
+            "line": 186,
+            "itemtype": "method",
+            "name": "toObject",
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "nx.data.Dictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableCollection.js",
+            "line": 13,
+            "description": "Add an item.",
+            "itemtype": "method",
+            "name": "add",
+            "params": [
+                {
+                    "name": "item",
+                    "description": ""
+                }
+            ],
+            "class": "nx.data.ObservableCollection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableCollection.js",
+            "line": 30,
+            "itemtype": "method",
+            "name": "addRange",
+            "params": [
+                {
+                    "name": "iter",
+                    "description": ""
+                }
+            ],
+            "class": "nx.data.ObservableCollection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableCollection.js",
+            "line": 46,
+            "itemtype": "method",
+            "name": "insert",
+            "params": [
+                {
+                    "name": "item",
+                    "description": ""
+                },
+                {
+                    "name": "index",
+                    "description": ""
+                }
+            ],
+            "class": "nx.data.ObservableCollection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableCollection.js",
+            "line": 64,
+            "itemtype": "method",
+            "name": "insertRange",
+            "params": [
+                {
+                    "name": "iter",
+                    "description": ""
+                },
+                {
+                    "name": "index",
+                    "description": ""
+                }
+            ],
+            "class": "nx.data.ObservableCollection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableCollection.js",
+            "line": 82,
+            "itemtype": "method",
+            "name": "remove",
+            "params": [
+                {
+                    "name": "item",
+                    "description": ""
+                }
+            ],
+            "class": "nx.data.ObservableCollection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableCollection.js",
+            "line": 115,
+            "itemtype": "method",
+            "name": "removeAt",
+            "params": [
+                {
+                    "name": "index",
+                    "description": ""
+                }
+            ],
+            "class": "nx.data.ObservableCollection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableCollection.js",
+            "line": 132,
+            "itemtype": "method",
+            "name": "clear",
+            "class": "nx.data.ObservableCollection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableCollection.js",
+            "line": 144,
+            "itemtype": "method",
+            "name": "sort",
+            "params": [
+                {
+                    "name": "comp",
+                    "description": ""
+                }
+            ],
+            "class": "nx.data.ObservableCollection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableCollection.js",
+            "line": 166,
+            "description": "Apply a diff watcher, which handles each item in the collection, to the collection.",
+            "itemtype": "method",
+            "name": "monitor",
+            "params": [
+                {
+                    "name": "handler",
+                    "description": "lambda(item) returning a rollback method"
+                }
+            ],
+            "return": {
+                "description": "unwatcher A Object with unwatch method."
+            },
+            "class": "nx.data.ObservableCollection",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableDictionary.js",
+            "line": 38,
+            "itemtype": "method",
+            "name": "setItem",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "description": "",
+                    "type": "Any"
+                }
+            ],
+            "class": "nx.data.ObservableDictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableDictionary.js",
+            "line": 74,
+            "itemtype": "method",
+            "name": "removeItem",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "class": "nx.data.ObservableDictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableDictionary.js",
+            "line": 97,
+            "itemtype": "method",
+            "name": "clear",
+            "class": "nx.data.ObservableDictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableDictionary.js",
+            "line": 108,
+            "description": "Apply a diff watcher, which handles each key-item-pair in the collection, to the dictionary.",
+            "itemtype": "method",
+            "name": "monitor",
+            "params": [
+                {
+                    "name": "handler",
+                    "description": "lambda(key, item) returning a rollback method"
+                }
+            ],
+            "return": {
+                "description": "unwatcher A Object with unwatch method."
+            },
+            "class": "nx.data.ObservableDictionary",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableObject.js",
+            "line": 14,
+            "description": "Dispose current object.",
+            "itemtype": "method",
+            "name": "dispose",
+            "class": "nx.data.ObservableObject",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableObject.js",
+            "line": 22,
+            "description": "Check whether current object has specified property.",
+            "itemtype": "method",
+            "name": "has",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "nx.data.ObservableObject",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableObject.js",
+            "line": 32,
+            "description": "Get specified property value.",
+            "itemtype": "method",
+            "name": "get",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*"
+            },
+            "class": "nx.data.ObservableObject",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableObject.js",
+            "line": 47,
+            "description": "Set specified property value.",
+            "itemtype": "method",
+            "name": "set",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "description": "",
+                    "type": "*"
+                }
+            ],
+            "class": "nx.data.ObservableObject",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/ObservableObject.js",
+            "line": 66,
+            "description": "Get all properties.",
+            "itemtype": "method",
+            "name": "gets",
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "nx.data.ObservableObject",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 17,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "iter",
+                    "description": ""
+                }
+            ],
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 25,
+            "description": "Reset the query.",
+            "itemtype": "method",
+            "name": "reset",
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 37,
+            "itemtype": "method",
+            "name": "where",
+            "params": [
+                {
+                    "name": "expr",
+                    "description": ""
+                }
+            ],
+            "chainable": 1,
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 46,
+            "description": "method orderBy",
+            "params": [
+                {
+                    "name": "expr",
+                    "description": ""
+                },
+                {
+                    "name": "desc",
+                    "description": ""
+                }
+            ],
+            "chainable": 1,
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 68,
+            "itemtype": "method",
+            "name": "groupBy",
+            "params": [
+                {
+                    "name": "expr",
+                    "description": ""
+                }
+            ],
+            "chainable": 1,
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 76,
+            "itemtype": "method",
+            "name": "distinct",
+            "params": [
+                {
+                    "name": "expr",
+                    "description": ""
+                }
+            ],
+            "chainable": 1,
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 84,
+            "itemtype": "method",
+            "name": "skip",
+            "params": [
+                {
+                    "name": "count",
+                    "description": ""
+                }
+            ],
+            "chainable": 1,
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 98,
+            "itemtype": "method",
+            "name": "take",
+            "params": [
+                {
+                    "name": "count",
+                    "description": ""
+                }
+            ],
+            "chainable": 1,
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 108,
+            "itemtype": "method",
+            "name": "join",
+            "params": [
+                {
+                    "name": "iter",
+                    "description": ""
+                },
+                {
+                    "name": "on",
+                    "description": ""
+                }
+            ],
+            "chainable": 1,
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 120,
+            "itemtype": "method",
+            "name": "select",
+            "params": [
+                {
+                    "name": "expr",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Array"
+            },
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 149,
+            "itemtype": "method",
+            "name": "first",
+            "params": [
+                {
+                    "name": "expr",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Any"
+            },
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 168,
+            "itemtype": "method",
+            "name": "last",
+            "params": [
+                {
+                    "name": "expr",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Any"
+            },
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 187,
+            "itemtype": "method",
+            "name": "all",
+            "params": [
+                {
+                    "name": "expr",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 195,
+            "itemtype": "method",
+            "name": "any",
+            "params": [
+                {
+                    "name": "expr",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 203,
+            "itemtype": "method",
+            "name": "max",
+            "params": [
+                {
+                    "name": "expr",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 213,
+            "itemtype": "method",
+            "name": "min",
+            "params": [
+                {
+                    "name": "expr",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 223,
+            "itemtype": "method",
+            "name": "sum",
+            "params": [
+                {
+                    "name": "expr",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 233,
+            "itemtype": "method",
+            "name": "average",
+            "params": [
+                {
+                    "name": "expr",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 244,
+            "itemtype": "method",
+            "name": "toArray",
+            "return": {
+                "description": "",
+                "type": "Array"
+            },
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/Query.js",
+            "line": 420,
+            "doctype": "MarkDown\noptions:\n- options.array [any*]\n  - the target array\n- options.select: function(any){return boolean;}\n  - *optional*\n  - pre-filter of the array\n- options.aggregate: {grouper:grouper,aggregater:aggregater} or [proplist, aggregater] or [prop, prop, ..., aggregater]\n  - *optional*\n  - proplist: \"prop,prop,...\"\n  - prop: property name on array items\n  - grouper: map an array item into a string key\n  - aggregater: function(mapped){return aggregated}\n- options.mapping: function(item){return newitem}\n  - *optional*\n- options.orderby: proplist or [prop, prop, ...]\n  - *optional*",
+            "class": "nx.data.Query",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 13,
+            "description": "The length of SortedMap.",
+            "itemtype": "property",
+            "name": "length",
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 42,
+            "description": "validate the init args",
+            "params": [
+                {
+                    "name": "data",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 63,
+            "description": "Add or insert an value with specified key and index.",
+            "itemtype": "method",
+            "name": "add",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "Specified key."
+                },
+                {
+                    "name": "value",
+                    "description": "(Optional) The value, default undefined."
+                },
+                {
+                    "name": "index",
+                    "description": "(Optional) Specified index, default append."
+                }
+            ],
+            "return": {
+                "description": "The created entry."
+            },
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 90,
+            "description": "Remove value(s) from SortedMap by key(s).",
+            "itemtype": "method",
+            "name": "remove",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "The key of value attempt to be removed."
+                }
+            ],
+            "return": {
+                "description": "Removed value."
+            },
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 120,
+            "description": "Remove value from SortedMap by index.",
+            "itemtype": "method",
+            "name": "removeAt",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "The index of value attempt to be removed."
+                }
+            ],
+            "return": {
+                "description": "Removed value."
+            },
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 144,
+            "description": "get the item of this._data by index",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "Support negative number"
+                }
+            ],
+            "return": {
+                "description": "item",
+                "type": "Object"
+            },
+            "access": "private",
+            "tagname": "",
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 155,
+            "description": "Get the key at specified index.",
+            "itemtype": "method",
+            "name": "getKeyAt",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "The index."
+                }
+            ],
+            "return": {
+                "description": "The key, null if not exists."
+            },
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 168,
+            "description": "Get the index of specified key.",
+            "itemtype": "method",
+            "name": "indexOf",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "The key."
+                }
+            ],
+            "return": {
+                "description": "The index, -1 if not exists."
+            },
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 181,
+            "description": "Get a value with specified key.",
+            "itemtype": "method",
+            "name": "getValue",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "The value's key."
+                }
+            ],
+            "return": {
+                "description": "The value."
+            },
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 194,
+            "description": "Change value of specified key.",
+            "itemtype": "method",
+            "name": "setValue",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "The key attempt to be changed."
+                },
+                {
+                    "name": "value",
+                    "description": "The new value."
+                }
+            ],
+            "return": {
+                "description": "The new value."
+            },
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 220,
+            "description": "Get a value with speicifed index.",
+            "itemtype": "method",
+            "name": "getValueAt",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "The value's index."
+                }
+            ],
+            "return": {
+                "description": "The value."
+            },
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 235,
+            "description": "Change value of speicifed index.",
+            "itemtype": "method",
+            "name": "setValueAt",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "The index attempt to be changed."
+                },
+                {
+                    "name": "value",
+                    "description": "The new value."
+                }
+            ],
+            "return": {
+                "description": "The new value."
+            },
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 257,
+            "description": "change the order of specific Item by key",
+            "params": [
+                {
+                    "name": "key",
+                    "description": ""
+                },
+                {
+                    "name": "index",
+                    "description": ""
+                }
+            ],
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 279,
+            "description": "Sort the SortedMap with a comparer function.",
+            "itemtype": "method",
+            "name": "sort",
+            "params": [
+                {
+                    "name": "comparer",
+                    "description": "A function expecting arguments: key1, value1, key2, value2"
+                }
+            ],
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 289,
+            "description": "Get array of key-value pairs of all entries.",
+            "itemtype": "method",
+            "name": "toArray",
+            "return": {
+                "description": "An array, each item of which is an object with key and value property."
+            },
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 301,
+            "description": "support iterator for the callback which has three params:k,v,index",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": ""
+                }
+            ],
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/data/SortedMap.js",
+            "line": 312,
+            "description": "adapt to the nx.each, which has two params for the callback:k,v",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": ""
+                }
+            ],
+            "access": "private",
+            "tagname": "",
+            "class": "nx.data.SortedMap",
+            "namespace": "nx.data"
+        },
+        {
+            "file": "src/Comparable.js",
+            "line": 9,
+            "description": "Compare with the source.",
+            "itemtype": "method",
+            "name": "compare",
+            "params": [
+                {
+                    "name": "source",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "nx.Comparable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Iterable.js",
+            "line": 9,
+            "description": "Get the iteration function from an iterable object.",
+            "itemtype": "method",
+            "name": "getIterator",
+            "static": 1,
+            "params": [
+                {
+                    "name": "iter",
+                    "description": "",
+                    "type": "Object|Array|nx.Iterable"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Function"
+            },
+            "class": "nx.Iterable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Iterable.js",
+            "line": 28,
+            "description": "Convert the iterable object to an array.",
+            "itemtype": "method",
+            "name": "toArray",
+            "static": 1,
+            "params": [
+                {
+                    "name": "iter",
+                    "description": "",
+                    "type": "Object|Array|nx.Iterable"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Array"
+            },
+            "class": "nx.Iterable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Iterable.js",
+            "line": 53,
+            "itemtype": "property",
+            "name": "count",
+            "type": "Number",
+            "class": "nx.Iterable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Iterable.js",
+            "line": 63,
+            "itemtype": "method",
+            "name": "each",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": ""
+                },
+                {
+                    "name": "context",
+                    "description": ""
+                }
+            ],
+            "class": "nx.Iterable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Iterable.js",
+            "line": 71,
+            "itemtype": "method",
+            "name": "toArray",
+            "return": {
+                "description": "",
+                "type": "Array"
+            },
+            "class": "nx.Iterable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 37,
+            "description": "This method in order to watch the change of specified path of specified target.",
+            "static": 1,
+            "itemtype": "method",
+            "name": "watch",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The target observable object."
+                },
+                {
+                    "name": "path",
+                    "description": "The path to be watched."
+                },
+                {
+                    "name": "callback",
+                    "description": "The callback function accepting arguments list: (path, newvalue, oldvalue)."
+                },
+                {
+                    "name": "context",
+                    "description": "(Optional) The context which the callback will be called with."
+                }
+            ],
+            "return": {
+                "description": "Resource stub object, with release and affect methods.\n <p>release: unwatch the current watching.</p>\n <p>affect: invoke the callback with current value immediately.</p>"
+            },
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 91,
+            "description": "Monitor several paths of target at the same time, any value change of any path will trigger the callback with all values of all paths.",
+            "static": 1,
+            "itemtype": "method",
+            "name": "monitor",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The target observable object."
+                },
+                {
+                    "name": "pathlist",
+                    "description": "The path list to be watched."
+                },
+                {
+                    "name": "callback",
+                    "description": "The callback function accepting arguments list: (value1, value2, value3, ..., changed_path, changed_old_value)."
+                }
+            ],
+            "return": {
+                "description": "Resource stub object, with release and affect methods.\n <p>release: release the current monitoring.</p>\n <p>affect: invoke the callback with current values immediately.</p>"
+            },
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 138,
+            "is_constructor": 1,
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 145,
+            "description": "Dispose current object.",
+            "itemtype": "method",
+            "name": "dispose",
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 157,
+            "itemtype": "method",
+            "name": "",
+            "params": [
+                {
+                    "name": "names",
+                    "description": ""
+                },
+                {
+                    "name": "handler",
+                    "description": ""
+                },
+                {
+                    "name": "context",
+                    "description": ""
+                }
+            ],
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 181,
+            "itemtype": "method",
+            "name": "unwatch",
+            "params": [
+                {
+                    "name": "names",
+                    "description": ""
+                },
+                {
+                    "name": "handler",
+                    "description": ""
+                },
+                {
+                    "name": "context",
+                    "description": ""
+                }
+            ],
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 192,
+            "itemtype": "method",
+            "name": "notify",
+            "params": [
+                {
+                    "name": "names",
+                    "description": ""
+                },
+                {
+                    "name": "oldValue",
+                    "description": ""
+                }
+            ],
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 209,
+            "description": "Get existing binding object for specified property.",
+            "itemtype": "method",
+            "name": "getBinding",
+            "params": [
+                {
+                    "name": "prop",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*"
+            },
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 218,
+            "description": "Set binding for specified property.",
+            "itemtype": "method",
+            "name": "setBinding",
+            "params": [
+                {
+                    "name": "prop",
+                    "description": ""
+                },
+                {
+                    "name": "expr",
+                    "description": ""
+                },
+                {
+                    "name": "source",
+                    "description": ""
+                }
+            ],
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 261,
+            "description": "Clear binding for specified property.",
+            "itemtype": "method",
+            "name": "clearBinding",
+            "params": [
+                {
+                    "name": "prop",
+                    "description": ""
+                }
+            ],
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 385,
+            "static": 1,
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 397,
+            "description": "Get the target object of current binding.",
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 403,
+            "description": "Get the target path of current binding.",
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 409,
+            "description": "Get the source path of current binding.",
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 415,
+            "description": "Get or set the source of current binding.",
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 432,
+            "description": "Get or set the binding type.",
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 438,
+            "description": "Get the direction for current binding.",
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 444,
+            "description": "Get the trigger for current binding.",
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 450,
+            "description": "Get the format for current binding.",
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Observable.js",
+            "line": 456,
+            "description": "Get the converter for current binding.",
+            "class": "nx.Observable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/Serializable.js",
+            "line": 8,
+            "itemtype": "method",
+            "name": "serialize",
+            "return": {
+                "description": "",
+                "type": "Any"
+            },
+            "class": "nx.Serializable",
+            "namespace": "nx"
+        },
+        {
+            "file": "src/base.js",
+            "line": 52,
+            "description": "Extend target with properties from sources.",
+            "itemtype": "method",
+            "name": "extend",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The target object to be extended.",
+                    "type": "Object"
+                },
+                {
+                    "name": "source",
+                    "description": "The source objects.",
+                    "type": "Object",
+                    "multiple": true
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "nx",
+            "module": "nx"
+        },
+        {
+            "file": "src/base.js",
+            "line": 72,
+            "description": "Iterate over target and execute the callback with context.",
+            "itemtype": "method",
+            "name": "each",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The target object to be iterate over.",
+                    "type": "Object|Array|Iterable"
+                },
+                {
+                    "name": "callback",
+                    "description": "The callback function to execute.",
+                    "type": "Function"
+                },
+                {
+                    "name": "context",
+                    "description": "The context object which act as 'this'.",
+                    "type": "Object"
+                }
+            ],
+            "class": "nx",
+            "module": "nx"
+        },
+        {
+            "file": "src/base.js",
+            "line": 109,
+            "description": "Shallow clone target object.",
+            "itemtype": "method",
+            "name": "clone",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The target object to be cloned.",
+                    "type": "Object|Array"
+                }
+            ],
+            "return": {
+                "description": "The cloned object.",
+                "type": "Object"
+            },
+            "class": "nx",
+            "module": "nx"
+        },
+        {
+            "file": "src/base.js",
+            "line": 253,
+            "description": "Check whether target is specified type.",
+            "itemtype": "method",
+            "name": "is",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The target object to be checked.",
+                    "type": "Object"
+                },
+                {
+                    "name": "type",
+                    "description": "The type could either be a string or a class object.",
+                    "type": "String|Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "nx",
+            "module": "nx"
+        },
+        {
+            "file": "src/base.js",
+            "line": 286,
+            "description": "Get the specified property value of target.",
+            "itemtype": "method",
+            "name": "get",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The target object.",
+                    "type": "Object"
+                },
+                {
+                    "name": "name",
+                    "description": "The property name.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The value.",
+                "type": "*"
+            },
+            "class": "nx",
+            "module": "nx"
+        },
+        {
+            "file": "src/base.js",
+            "line": 303,
+            "description": "Set the specified property of target with value.",
+            "itemtype": "method",
+            "name": "set",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The target object.",
+                    "type": "Object"
+                },
+                {
+                    "name": "name",
+                    "description": "The property name.",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "description": "The value to be set.",
+                    "type": "*"
+                }
+            ],
+            "class": "nx",
+            "module": "nx"
+        },
+        {
+            "file": "src/base.js",
+            "line": 320,
+            "description": "Get all properties of target.",
+            "itemtype": "method",
+            "name": "gets",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The target Object.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "An object contains all keys and values of target.",
+                "type": "Object"
+            },
+            "class": "nx",
+            "module": "nx"
+        },
+        {
+            "file": "src/base.js",
+            "line": 342,
+            "description": "Set a bunch of properties for target.",
+            "itemtype": "method",
+            "name": "sets",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The target object.",
+                    "type": "Object"
+                },
+                {
+                    "name": "dict",
+                    "description": "An object contains all keys and values to be set.",
+                    "type": "Object"
+                }
+            ],
+            "class": "nx",
+            "module": "nx"
+        },
+        {
+            "file": "src/base.js",
+            "line": 362,
+            "description": "Check whether target has specified property.",
+            "itemtype": "method",
+            "name": "has",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The target object.",
+                    "type": "Object"
+                },
+                {
+                    "name": "name",
+                    "description": "The property name.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "nx",
+            "module": "nx"
+        },
+        {
+            "file": "src/base.js",
+            "line": 381,
+            "description": "Compare target and source.",
+            "itemtype": "method",
+            "name": "compare",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The target object.",
+                    "type": "Object"
+                },
+                {
+                    "name": "source",
+                    "description": "The source object.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The result could be -1,0,1 which indicates the comparison result.",
+                "type": "Number"
+            },
+            "class": "nx",
+            "module": "nx"
+        },
+        {
+            "file": "src/base.js",
+            "line": 404,
+            "description": "Get value from target specified by a path and optionally set a value for it.",
+            "itemtype": "method",
+            "name": "path",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "The target object.",
+                    "type": "Object"
+                },
+                {
+                    "name": "path",
+                    "description": "The path.",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "description": "The value to be set.",
+                    "type": "*",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*"
+            },
+            "class": "nx",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 19,
+            "description": "Dispose current object.",
+            "itemtype": "method",
+            "name": "dispose",
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 26,
+            "description": "Destroy current object.",
+            "itemtype": "method",
+            "name": "destroy",
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 33,
+            "description": "Call overridden method from super class",
+            "itemtype": "method",
+            "name": "inherited",
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 43,
+            "description": "Check whether current object is specified type.",
+            "itemtype": "method",
+            "name": "is",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "",
+                    "type": "String|Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 70,
+            "description": "Check whether current object has specified property.",
+            "itemtype": "method",
+            "name": "has",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 80,
+            "description": "Get specified property value.",
+            "itemtype": "method",
+            "name": "get",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "*"
+            },
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 96,
+            "description": "Set specified property value.",
+            "itemtype": "method",
+            "name": "set",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "value",
+                    "description": "",
+                    "type": "*"
+                }
+            ],
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 114,
+            "description": "Get all properties.",
+            "itemtype": "method",
+            "name": "gets",
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 127,
+            "description": "Set a bunch of properties.",
+            "itemtype": "method",
+            "name": "sets",
+            "params": [
+                {
+                    "name": "dict",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 141,
+            "description": "Check whether current object has specified event.",
+            "itemtype": "method",
+            "name": "can",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 151,
+            "description": "Add an event handler.",
+            "itemtype": "method",
+            "name": "on",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "handler",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 181,
+            "description": "Remove an event handler.",
+            "itemtype": "method",
+            "name": "off",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "handler",
+                    "description": "",
+                    "type": "Function",
+                    "optional": true
+                },
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 206,
+            "description": "Add a single event handler.",
+            "itemtype": "method",
+            "name": "upon",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "handler",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "context",
+                    "description": "",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 227,
+            "description": "Trigger an event.",
+            "itemtype": "method",
+            "name": "fire",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "data",
+                    "description": "",
+                    "type": "*",
+                    "optional": true
+                }
+            ],
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 280,
+            "description": "Define an event and attach to target.",
+            "itemtype": "method",
+            "name": "extendEvent",
+            "static": 1,
+            "params": [
+                {
+                    "name": "target",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 315,
+            "description": "Define a property and attach to target.",
+            "itemtype": "method",
+            "name": "extendProperty",
+            "static": 1,
+            "params": [
+                {
+                    "name": "target",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "meta",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 401,
+            "description": "Define a method and attach to target.",
+            "itemtype": "method",
+            "name": "extendMethod",
+            "static": 1,
+            "params": [
+                {
+                    "name": "target",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "method",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "class": "nx.Object",
+            "module": "nx"
+        },
+        {
+            "file": "src/class.js",
+            "line": 427,
+            "description": "Define a class",
+            "itemtype": "method",
+            "name": "define",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "",
+                    "type": "String",
+                    "optional": true
+                },
+                {
+                    "name": "parent",
+                    "description": "",
+                    "type": "Function",
+                    "optional": true
+                },
+                {
+                    "name": "members",
+                    "description": "",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Function"
+            },
+            "class": "nx.Object",
+            "module": "nx"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Collection.js:83"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Collection.js:104"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Collection.js:130"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Collection.js:150"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Collection.js:170"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Collection.js:179"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Collection.js:187"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Collection.js:196"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Collection.js:216"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Collection.js:235"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Collection.js:261"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Collection.js:277"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Dictionary.js:96"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Dictionary.js:104"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Dictionary.js:179"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Dictionary.js:186"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/ObservableObject.js:22"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/ObservableObject.js:32"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/ObservableObject.js:66"
+        },
+        {
+            "message": "replacing incorrect tag: extend with extends",
+            "line": " src/data/Query.js:10"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Query.js:120"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Query.js:149"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Query.js:168"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Query.js:187"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Query.js:195"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Query.js:203"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Query.js:213"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Query.js:223"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Query.js:233"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/Query.js:244"
+        },
+        {
+            "message": "unknown tag: doctype",
+            "line": " src/data/Query.js:420"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/SortedMap.js:42"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/data/SortedMap.js:144"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Comparable.js:9"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Iterable.js:9"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Iterable.js:28"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Iterable.js:71"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Observable.js:209"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/Serializable.js:8"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/base.js:52"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/base.js:109"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/base.js:253"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/base.js:286"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/base.js:320"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/base.js:362"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/base.js:381"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/base.js:404"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/class.js:43"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/class.js:70"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/class.js:80"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/class.js:114"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/class.js:141"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src/class.js:427"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src/data/Query.js:17"
+        },
+        {
+            "message": "Missing item type\nmethod orderBy",
+            "line": " src/data/Query.js:46"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src/data/Query.js:420"
+        },
+        {
+            "message": "Missing item type\nvalidate the init args",
+            "line": " src/data/SortedMap.js:42"
+        },
+        {
+            "message": "Missing item type\nget the item of this._data by index",
+            "line": " src/data/SortedMap.js:144"
+        },
+        {
+            "message": "Missing item type\nchange the order of specific Item by key",
+            "line": " src/data/SortedMap.js:257"
+        },
+        {
+            "message": "Missing item type\nsupport iterator for the callback which has three params:k,v,index",
+            "line": " src/data/SortedMap.js:301"
+        },
+        {
+            "message": "Missing item type\nadapt to the nx.each, which has two params for the callback:k,v",
+            "line": " src/data/SortedMap.js:312"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src/Observable.js:138"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src/Observable.js:385"
+        },
+        {
+            "message": "Missing item type\nGet the target object of current binding.",
+            "line": " src/Observable.js:397"
+        },
+        {
+            "message": "Missing item type\nGet the target path of current binding.",
+            "line": " src/Observable.js:403"
+        },
+        {
+            "message": "Missing item type\nGet the source path of current binding.",
+            "line": " src/Observable.js:409"
+        },
+        {
+            "message": "Missing item type\nGet or set the source of current binding.",
+            "line": " src/Observable.js:415"
+        },
+        {
+            "message": "Missing item type\nGet or set the binding type.",
+            "line": " src/Observable.js:432"
+        },
+        {
+            "message": "Missing item type\nGet the direction for current binding.",
+            "line": " src/Observable.js:438"
+        },
+        {
+            "message": "Missing item type\nGet the trigger for current binding.",
+            "line": " src/Observable.js:444"
+        },
+        {
+            "message": "Missing item type\nGet the format for current binding.",
+            "line": " src/Observable.js:450"
+        },
+        {
+            "message": "Missing item type\nGet the converter for current binding.",
+            "line": " src/Observable.js:456"
+        }
+    ]
+}
