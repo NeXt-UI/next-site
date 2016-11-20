@@ -45,12 +45,10 @@ if (argv.hasOwnProperty("u") && argv.hasOwnProperty("p") && argv.hasOwnProperty(
 		console.log('%s listening at %s', restServer.name, restServer.url);
 	});
 
-
 }
 else {
-	console.error("How-to-start instruction");
+	console.error('To start, use: node contact-daemon.js -u "example@gmail.com" -p "PaSsWoRd" -s "smtp.gmail.com"');
 }
-
 
 function sendMail(smtpConfig, messageConfig) {
 	// create reusable transporter object using the default SMTP transport
