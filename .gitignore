@@ -19,3 +19,5 @@ codepen-parser/__pycache__/
 codepen-parser/*.pyc
 
 todo.txt
+
+mail-sender/
