@@ -35,7 +35,9 @@ function scrollToId(htmlId) {
  */
 function sendFeedback() {
 
-	var url = "http://localhost:9001/";
+	var apiHost = window.location.hostname;
+	var apiPort = 9001;
+	var apiUrl = "http://" + apiHost + ":" + apiPort + "/";
 
 	var data = {
 		"name": $("#name").val(),
@@ -44,10 +46,10 @@ function sendFeedback() {
 	};
 
 	$.post({
-		url: url,
-		data: data,
-		timeout: 5000,
-		dataType: "json"
+		"url": apiUrl,
+		"data": data,
+		"timeout": 5000,
+		"dataType": "json"
 	})
 		.done(function (res) {
 			console.log("ok", res);
