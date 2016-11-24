@@ -1,23 +1,70 @@
-@@include('_head.html')
-@@include('_nav.html', {
-    "navActiveItem": "showcase"
-})
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>NeXt UI Framework</title>
+	<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/font-awesome.min.css"/>
+
+	<!--Latest compiled and minified JavaScript-->
+	<script src="vendor/jquery/dist/jquery.min.js"></script>
+	<!--bootstrap end-->
+
+	<link rel="stylesheet" href="vendor/hover/css/hover-min.css">
+
+	<!--[if lt IE 9]>
+	<script src="vendor/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
+
+	<!--app style start-->
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<!--app style end-->
+</head>
+<body>
+<nav class="bg0 rel m-header">
+	<header class="hlh60 rel cf l_ px20 auto" style="width:980px">
+        <span class="f30 mr50">
+            <!--<img src="images/OpenDaylight_logo.png" alt="OpenDaylight Logo" class="logo-image">-->
+            <a href=".">
+				<img src="images/logo.svg" alt="NeXt Logo" class="logo-image"/>
+			</a>
+        </span>
+		<span class="r link-f_ f16 mr20_">
+            <a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+			<a href="./examples.html"><i class="fa fa-code" aria-hidden="true"></i> Examples</a>
+			<a
+					class="active"
+					href="./show-case.html"><i class="fa fa-star" aria-hidden="true"></i> Showcase</a>
+			<a class="js-docs " href="javascript:;"><i class="fa fa-book" aria-hidden="true"></i> Docs <i
+					class="fa fa-caret-down"></i></a>
+			<a href="./contact.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
+			<a href="./download.html"><i class="fa fa-download" aria-hidden="true"></i> Download</a>
+        </span>
+		<ul class="m-dropdown-menu" role="menu">
+			<li><a role="menuitem" tabindex="-1" href="https://github.com/NeXt-UI/next-tutorials" target="_blank">Tutorials</a>
+			</li>
+			<li><a role="menuitem" tabindex="-1" href="./docs.html">API</a></li>
+			<li><a role="menuitem" tabindex="-1" href="./license.html">License</a></li>
+		</ul>
+	</header>
+</nav>
 
 <div class="auto wrap">
 	<h2 class="mx20 mt10     f16"><strong>Showcase</strong></h2>
 	<hr class="mx20 mt10 mb20"/>
-    <section class="eq-height clfix mb10 m-show-case">
-        <aside class="col1 l">
-            <div class="p10">
-                <h2 class="f16 mb10" style="margin-left:10px; font-weight: normal">Projects</h2>
-                <nav class="m-side-nav">
-                    <li class="active"><a href="#" onclick="scrollToId('showcase-apic-em')">APIC-EM</a></li>
+	<section class="eq-height clfix mb10 m-show-case">
+		<aside class="col1 l">
+			<div class="p10">
+				<h2 class="f16 mb10" style="margin-left:10px; font-weight: normal">Projects</h2>
+				<nav class="m-side-nav">
+					<li class="active"><a href="#" onclick="scrollToId('showcase-apic-em')">APIC-EM</a></li>
 					<li class="active"><a href="#" onclick="scrollToId('showcase-virl')">VIRL</a></li>
-                    <li class="active"><a href="#" onclick="scrollToId('showcase-pce-of')">PCE-OpenFlow</a></li>
-                    <li class="active"><a href="#" onclick="scrollToId('showcase-loki')">LOKI</a></li>
-                    <!--<li class="active"><a href="#" onclick="scrollToId('showcase-wae')">WAE</a></li>-->
-                    <!--<li class="active"><a href="#" onclick="scrollToId('showcase-iwan')">IWAN</a></li>-->
-                </nav>
+					<li class="active"><a href="#" onclick="scrollToId('showcase-pce-of')">PCE-OpenFlow</a></li>
+					<li class="active"><a href="#" onclick="scrollToId('showcase-industrial-network-director')">Industrial
+						Network Director</a></li>
+					<li class="active"><a href="#" onclick="scrollToId('showcase-loki')">LOKI</a></li>
+					<!--<li class="active"><a href="#" onclick="scrollToId('showcase-wae')">WAE</a></li>-->
+					<!--<li class="active"><a href="#" onclick="scrollToId('showcase-iwan')">IWAN</a></li>-->
+				</nav>
 
 				<section class="p20">
 					<hr class="my20"/>
@@ -29,43 +76,50 @@
 					</a>
 				</section>
 
-            </div>
-        </aside>
-        <div class="col2 r">
-            <div class="tl p10 mr50 showcase-text-container">
-                <p>
-					NeXt offers a comprehensive set of tools to leverage development and usage of real-world web applications.
-					A number of teams across networking leaders chose NeXt, thanks to a huge capability to satisfy network visualization needs.
+			</div>
+		</aside>
+		<div class="col2 r">
+			<div class="tl p10 mr50 showcase-text-container">
+				<p>
+					NeXt offers a comprehensive set of tools to leverage development and usage of real-world web
+					applications.
+					A number of teams across networking leaders chose NeXt, thanks to a huge capability to satisfy
+					network visualization needs.
 					The list of happy users includes Cisco, Verizon, AT&T, HP Enterprise, ZTE and NTS.
 					NeXt was born and raised at Cisco and is now a part of OpenDaylight ecosystem.</p>
 				<p>
 					Are we missing your app? <a href="#">Contact us</a> to have us add it to this list.
 				</p>
-                <hr class="my20"/>
+				<hr class="my20"/>
 
-                <!-- Start APIC-EM -->
-                <section class="content" id="showcase-apic-em">
-                    <h2 class="f16 bold">APIC-EM</h2>
-                    <p>APIC-EM is an open network modeling & reporting toolkit that provides Fast & Flexible, object-based
-                        network modeling for networks. NEXT was used by the project team to create network topolgies. </p>
-                    <p class="mt10"><img src="images/showcase/apic-em.jpg" alt="APIC-EM"/></p>
-                    <div class="clear showcase-checkout-button">
-                        <a href="https://developer.cisco.com/site/apic-em/"
-                           class="bg-orange f16 radius3 cf dib mt10 btnv1"
-                           style="padding:10px;"
-                           target="_blank">
-                            Check this app out
-                        </a>
-                    </div>
-                    <hr class="my20"/>
-                </section>
+				<!-- Start APIC-EM -->
+				<section class="content" id="showcase-apic-em">
+					<h2 class="f16 bold">APIC-EM</h2>
+					<p>APIC-EM is an open network modeling & reporting toolkit that provides Fast & Flexible,
+						object-based
+						network modeling for networks. NEXT was used by the project team to create network
+						topolgies. </p>
+					<p class="mt10"><img src="images/showcase/apic-em.jpg" alt="APIC-EM"/></p>
+					<div class="clear showcase-checkout-button">
+						<a href="https://developer.cisco.com/site/apic-em/"
+						   class="bg-orange f16 radius3 cf dib mt10 btnv1"
+						   style="padding:10px;"
+						   target="_blank">
+							Check this app out
+						</a>
+					</div>
+					<hr class="my20"/>
+				</section>
 
 				<!-- Start VIRL -->
 				<section class="content" id="showcase-virl">
 					<h2 class="f16 bold">VIRL</h2>
-					<p class="gray">Virtual Internet Routing Lab (VIRL) provides a scalable, extensible network design and simulation environment.
-						VIRL includes several Cisco Network Operating System virtual machines (IOSv, IOS-XRv, CSR1000v, NX-OSv, IOSvL2 and ASAv),
-						as well as Ubuntu Linux 14.04 LTS . There is also extensive ability to integrate with third-party vendor virtual machines.</p>
+					<p class="gray">Virtual Internet Routing Lab (VIRL) provides a scalable, extensible network design
+						and simulation environment.
+						VIRL includes several Cisco Network Operating System virtual machines (IOSv, IOS-XRv, CSR1000v,
+						NX-OSv, IOSvL2 and ASAv),
+						as well as Ubuntu Linux 14.04 LTS . There is also extensive ability to integrate with
+						third-party vendor virtual machines.</p>
 					<p class="mt10"><img src="images/showcase/virl.png" alt="Virtual Internet Routing Lab (VIRL)"/></p>
 					<div class="clear showcase-checkout-button">
 						<a href="http://virl.cisco.com/"
@@ -79,22 +133,24 @@
 					<hr class="my20"/>
 				</section>
 
-                <!-- Start PCE-OF -->
-                <section class="content" id="showcase-pce-of">
-                    <h2 class="f16 bold">PCE-OF</h2>
-                    <p class="gray">
-                        OpenFlow is a protocol for programming flow tables on switches.
-                        Path Computation Element - OpenFlow (PCE-OF) is a new ODL application that applies policy-based
-                        path computation and programming thus providing a level of "smart" traffic engineering to openflow networks.</p>
-                    <p class="mt10"><img class="showcase-image-border" src="images/showcase/pce-of.png" alt="Path Computation Element - OpenFlow"/></p>
-                    <div class="clear showcase-checkout-button">
-                        <a href="https://github.com/CiscoDevNet/pceof-gui"
-                           class="bg-orange f16 radius3 cf dib mt10 btnv1"
-                           style="padding:10px;"
-                           target="_blank">
-                            Check this app out
-                        </a>
-                    </div>
+				<!-- Start PCE-OF -->
+				<section class="content" id="showcase-pce-of">
+					<h2 class="f16 bold">PCE-OF</h2>
+					<p class="gray">
+						OpenFlow is a protocol for programming flow tables on switches.
+						Path Computation Element - OpenFlow (PCE-OF) is a new ODL application that applies policy-based
+						path computation and programming thus providing a level of "smart" traffic engineering to
+						openflow networks.</p>
+					<p class="mt10"><img class="showcase-image-border" src="images/showcase/pce-of.png"
+										 alt="Path Computation Element - OpenFlow"/></p>
+					<div class="clear showcase-checkout-button">
+						<a href="https://github.com/CiscoDevNet/pceof-gui"
+						   class="bg-orange f16 radius3 cf dib mt10 btnv1"
+						   style="padding:10px;"
+						   target="_blank">
+							Check this app out
+						</a>
+					</div>
 
 					<div class="clear showcase-checkout-button">
 						<a href="https://developer.cisco.com/site/opendaylight/discover/odl-at-cisco/build-apps-on-top-of-odl/index.gsp"
@@ -105,32 +161,66 @@
 						</a>
 					</div>
 
+					<hr class="my20"/>
+				</section>
 
+				<!-- Start Industrial Network Director -->
+				<section class="content" id="showcase-industrial-network-director">
+					<h2 class="f16 bold">Industrial Network Director</h2>
+					<p class="gray">
+						Industrial Network Director is a very easy to use network management system for industrial
+						automation networks that helps operations teams manage the automation providing full visibility
+						and control of the Industrial Ethernet infrastructure in the context of the complete automation
+						network.</p>
+					<p class="mt10"><img class="showcase-image-border"
+										 src="images/showcase/industrial-network-director.png"
+										 alt="Industrial Network Director"/></p>
+					<div class="clear showcase-checkout-button">
+						<a href="http://www.cisco.com/c/en/us/products/cloud-systems-management/industrial-network-director/index.html"
+						   class="bg-orange f16 radius3 cf dib mt10 btnv1"
+						   style="padding:10px;"
+						   target="_blank">
+							Check this app out
+						</a>
+					</div>
 
-                    <hr class="my20"/>
-                </section>
+					<hr class="my20"/>
+				</section>
 
-                <!-- Start Loki -->
-                <section class="content" id="showcase-loki">
-                    <h2 class="f16 bold">LOKI</h2>
+				<!-- Start Loki -->
+				<section class="content" id="showcase-loki">
+					<h2 class="f16 bold">LOKI</h2>
 
-                    <p class="gray">
+					<p class="gray">
 						Loki is an open network modeling & reporting toolkit that provides fast and flexible,
 						object-based network modeling for networks.
 						The project team used NeXt to visualize topologies in network model.
 					</p>
 
-                    <p class="mt10"><img class="showcase-image-border" src="images/showcase/loki.png" alt=""/></p>
-                    <hr class="my20"/>
-                </section>
+					<p class="mt10"><img class="showcase-image-border" src="images/showcase/loki.png" alt=""/></p>
+					<hr class="my20"/>
+				</section>
 
-            </div>
-        </div>
-    </section>
+			</div>
+		</div>
+	</section>
 
 </div>
 
-@@include('_footer.html')
+<nav class="hlh60 bg0 c6 ">
+	<footer class="l_ px20 auto" style="width:980px;">
+		<div class="f30 mr50">
+			<img src="images/logo.svg"/>
+		</div>
+		<div>
+			Code and documentation are licensed under the <a href="license.html" class="cc">EPL-1.0 License</a>
+		</div>
+		<div class="f16 r" style="color:#838383;">
+			&copy; 2016 Cisco DevNet
+		</div>
+	</footer>
+</nav>
+<script type="text/javascript" src="js/app.js"></script>
 
 </body>
 </html>

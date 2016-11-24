@@ -64,6 +64,9 @@ def parse_collection(collection_id):
         },
         "topomods": {
             "label": "Topology Modifications"
+        },
+        "groups": {
+            "label": "Groups"
         }
     }
 
