@@ -1,167 +1,420 @@
 @@include('_head.html')
 @@include('_nav.html', {
-    "navActiveItem": "download"
+"navActiveItem": "download"
 })
 
 <div class="auto wrap">
 
-    <h2 class="mx20 mt10     f16"><strong>Download NeXt</strong></h2>
-    <hr class="mx20 mt10 mb20"/>
-    <section class="eq-height clfix mb10 m-show-case">
-        <aside class="col1 l">
-            <div class="p10">
-                <nav class="m-side-nav">
-                    <ul>
-                        <li class="active"><a href="#" onclick="scrollToId('download-next')">Download Latest</a></li>
-                        <li class="active"><a href="#" onclick="scrollToId('release-0-9')">0.9 Release note</a></li>
-                        <li class="active"><a href="#" onclick="scrollToId('release-0-8')">0.8 Release note</a></li>
-                    </ul>
-                </nav>
-                <section class="p20">
-                    <hr class="my20"/>
-                    <h2 class="f14">Feedback</h2>
-                    <p class="my20">NEXT framework is currently under active development,
-                        and the NEXT team constantly invests efforts to improving the functionality and stability of the framework,
-                        if you have feedback about everything, feel free to let us know, thank you for using NEXT. </p>
-                    <a href="contact.html" class="bg-light-blue cf radius3 dib mt10 btnv2" style="padding:10px 20px;">
-                        Submit suggestion
-                    </a>
-                </section>
-            </div>
-        </aside>
-        <div class="col2 r">
+	<h2 class="mx20 mt10     f16"><strong>Download NeXt</strong></h2>
+	<hr class="mx20 mt10 mb20"/>
+	<section class="eq-height clfix mb10 m-show-case">
+		<aside class="col1 l">
+			<div class="p10">
+				<nav class="m-side-nav">
+					<ul>
+						<li class="active"><a href="#" onclick="scrollToId('download-next')">Download Latest</a></li>
+						<li class="active"><a href="#" onclick="scrollToId('release-1-0')">1.0 Release note</a></li>
+						<li class="active"><a href="#" onclick="scrollToId('release-0-9')">0.9 Release note</a></li>
+						<li class="active"><a href="#" onclick="scrollToId('release-0-8')">0.8 Release note</a></li>
+						<li class="active"><a href="#" onclick="scrollToId('release-0-7-3')">0.7.3 Release note</a></li>
+						<li class="active"><a href="#" onclick="scrollToId('release-0-7-2')">0.7.2 Release note</a></li>
+						<li class="active"><a href="#" onclick="scrollToId('release-0-6')">0.6 Release note</a></li>
+						<li class="active"><a href="#" onclick="scrollToId('release-0-5')">0.5 Release note</a></li>
+						<li class="active"><a href="#" onclick="scrollToId('release-0-4')">0.4 Release note</a></li>
+						<li class="active"><a href="#" onclick="scrollToId('release-0-3')">0.3 Release note</a></li>
+						<li class="active"><a href="#" onclick="scrollToId('release-0-2')">0.2 Release note</a></li>
+						<li class="active"><a href="#" onclick="scrollToId('release-0-1')">0.1 Release note</a></li>
+					</ul>
+				</nav>
+				<section class="p20">
+					<hr class="my20"/>
+					<h2 class="f14">Feedback</h2>
+					<p class="my20">NEXT framework is currently under active development,
+						and the NEXT team constantly invests efforts to improving the functionality and stability of the
+						framework,
+						if you have feedback about everything, feel free to let us know, thank you for using NEXT. </p>
+					<a href="contact.html" class="bg-light-blue cf radius3 dib mt10 btnv2" style="padding:10px 20px;">
+						Submit suggestion
+					</a>
+				</section>
+			</div>
+		</aside>
+		<div class="col2 r">
 
 
+			<div class="tl p10 mr50" id="download-next">
+				<p class="f16 lh20">Download NEXT now, and enjoy building web apps with this fantastic framework. </p>
+				<section class="tc mt20">
+					<a href="files/next-boron.zip" class="bg-light-blue cf dib mt10 bold btnv2 hvr-grow"
+					   style="padding:10px;">
+						<i class="fa fa-download" aria-hidden="true"></i> Download NEXT (.zip)
+					</a>
+					<div>
+						<a href="files/next-boron.tar.gz" class="secondary-download">Download .tar.gz</a>
+					</div>
+					<p class="c0 mt10">Latest: 0.9 (0.8 Mb)</p>
+				</section>
+				<hr class="my20"/>
+				<!-- Bower / NPM installation -->
+				<!-- todo: adjust styling -->
 
-            <div class="tl p10 mr50" id="download-next">
-                <p class="f16 lh20">Download NEXT now, and enjoy building web apps with this fantastic framework. </p>
-                <section class="tc mt20">
-                    <a href="files/next-boron.zip" class="bg-light-blue cf dib mt10 bold btnv2 hvr-grow" style="padding:10px;">
-                        <i class="fa fa-download" aria-hidden="true"></i> Download NEXT (.zip)
-                    </a>
-                    <div>
-                        <a href="files/next-boron.tar.gz" class="secondary-download">Download .tar.gz</a>
-                    </div>
-                    <p class="c0 mt10">Latest: 0.9 (0.8 Mb)</p>
-                </section>
-                <hr class="my20"/>
-                <!-- Bower / NPM installation -->
-                <!-- todo: adjust styling -->
 
-
-                <!-- Bower/npm -->
-                <section>
-                    <h3 class="f20">Bower/npm installation</h3>
+				<!-- Bower/npm -->
+				<section>
+					<h3 class="f20">Bower/npm installation</h3>
 					<img src="images/logos/bower-npm-logos.png" alt="Bower & NPM logo" style="width: 100px;">
-                    <p>
-                        To install the framework with Bower, navigate to your project's folder and run in terminal:<br>
-                        <code>
-                            bower install NeXt
-                        </code>
-                    </p>
-                    <p>
-                        For npm the syntax is slightly different:<br>
-                        <code>
-                            npm install next-bower
-                        </code>
-                    </p>
-                </section>
+					<p>
+						To install the framework with Bower, navigate to your project's folder and run in terminal:<br>
+						<code>
+							bower install NeXt
+						</code>
+					</p>
+					<p>
+						For npm the syntax is slightly different:<br>
+						<code>
+							npm install next-bower
+						</code>
+					</p>
+				</section>
 
 
-                <!-- Release note: 0.9 -->
-                <hr class="my20"/>
-                <h3 class="f20" id="release-0-9">0.9 Release note</h3>
-                <div class="hd c6">
+				<!-- Release note: 1.0 -->
+				<hr class="my20"/>
+				<h3 class="f20" id="release-1-0">1.0 Release note</h3>
+				<div class="hd c6">
+					Not available
+				</div>
+
+
+
+				<!-- Release note: 0.9 -->
+				<hr class="my20"/>
+				<h3 class="f20" id="release-0-9">0.9 Release note</h3>
+				<div class="hd c6">
 
 					<h4 class="f18">Major Features</h4>
-                    <ul class="padded-ul mb10">
-                        <li>World Map support <strong>added</strong></li>
-                        <li>NodeSet path support <strong>added</strong></li>
-                        <li>Performance <strong>improved</strong></li>
-                        <li>API documentation <strong>improved</strong></li>
-                    </ul>
+					<ul class="padded-ul mb10">
+						<li>World Map support <strong>added</strong></li>
+						<li>NodeSet path support <strong>added</strong></li>
+						<li>Performance <strong>improved</strong></li>
+						<li>API documentation <strong>improved</strong></li>
+					</ul>
 
 					<h4 class="f18">Target Environment</h4>
 					<h5 class="f16">For Execution</h5>
-                    <ul class="padded-ul mb10">
-                        <li>Firefox 42</li>
-                        <li>Chrome 38</li>
-                        <li>Safari 8</li>
-                    </ul>
+					<ul class="padded-ul mb10">
+						<li>Firefox 42</li>
+						<li>Chrome 38</li>
+						<li>Safari 8</li>
+					</ul>
 
 					<h5 class="f16">For Development</h5>
-                    <ul class="padded-ul mb10">
-                        <li>Grunt (http://gruntjs.com/)</li>
-                        <li>NodeJS (https://nodejs.org/en/)</li>
-                        <li>Qunit</li>
-                    </ul>
+					<ul class="padded-ul mb10">
+						<li>Grunt (http://gruntjs.com/)</li>
+						<li>NodeJS (https://nodejs.org/en/)</li>
+						<li>Qunit</li>
+					</ul>
 
 					<h4 class="f18">Bugs Fixed in this Release</h4>
-                    <ul class="padded-ul mb10">
-                        <li>addVertexSet issue</li>
-                        <li>Firefox css addRule bug</li>
-                        <li>Typos</li>
-                    </ul>
+					<ul class="padded-ul mb10">
+						<li>addVertexSet issue</li>
+						<li>Firefox css addRule bug</li>
+						<li>Typos</li>
+					</ul>
 
-                    <i class="fa fa-check-circle-o c-green" aria-hidden="true"></i> Compatible with previous release
-                </div>
+					<i class="fa fa-check-circle-o c-green" aria-hidden="true"></i> Compatible with previous release
+				</div>
 
-                <!-- Release note: 0.8 -->
-                <hr class="my20"/>
-                <h3 class="f20" id="release-0-8">0.8 Release note</h3>
-                <div class="hd c6">
+				<!-- Release note: 0.8 -->
+				<hr class="my20"/>
+				<h3 class="f20" id="release-0-8">0.8 Release note</h3>
+				<div class="hd c6">
 
 					<h4 class="f18">Major Features</h4>
-                    <p>Beryllium release of NeXt project provides a network-centric topology UI that offers visualizations of the following:</p>
-                    <ul class="padded-ul mb10">
-                        <li>Large complex network topologies <strong>supported</strong></li>
-                        <li>Aggregated network nodes functionality <strong>added</strong></li>
-                        <li>Traffic/path/tunnel/group visualizations <strong>added</strong></li>
-                        <li>Different layout algorithms <strong>added</strong></li>
-                        <li>Map overlays support <strong>added</strong></li>
-                        <li>Preset user-friendly interactions <strong>added</strong></li>
-                    </ul>
-
+					<p>Beryllium release of NeXt project provides a network-centric topology UI that offers
+						visualizations of the following:</p>
+					<ul class="padded-ul mb10">
+						<li>Large complex network topologies <strong>supported</strong></li>
+						<li>Aggregated network nodes functionality <strong>added</strong></li>
+						<li>Traffic/path/tunnel/group visualizations <strong>added</strong></li>
+						<li>Different layout algorithms <strong>added</strong></li>
+						<li>Map overlays support <strong>added</strong></li>
+						<li>Preset user-friendly interactions <strong>added</strong></li>
+					</ul>
 
 
 					<h4 class="f18">Target Environment</h4>
 					<h5 class="f16">For Execution</h5>
-                    <ul class="padded-ul mb10">
+					<ul class="padded-ul mb10">
 						<li>Requires latest version of Chrome/Firefox</li>
 					</ul>
 
 					<h5 class="f16">For Development</h5>
-                    <ul class="padded-ul mb10">
-                        <li>GNU
-                            <ul class="padded-ul">
-                                <li>Coreutils</li>
-                                <li>Findutils</li>
-                                <li>SED</li>
-                                <li>Make</li>
-                            </ul>
-                        </li>
-                        <li>NodeJS & NPM
-                            <ul class="padded-ul">
-                                <li>PhantomJS</li>
-                                <li>LESS</li>
-                                <li>YUIDoc</li>
-                                <li>Uglify</li>
-                            </ul>
-                        </li>
-                    </ul>
+					<ul class="padded-ul mb10">
+						<li>GNU
+							<ul class="padded-ul">
+								<li>Coreutils</li>
+								<li>Findutils</li>
+								<li>SED</li>
+								<li>Make</li>
+							</ul>
+						</li>
+						<li>NodeJS & NPM
+							<ul class="padded-ul">
+								<li>PhantomJS</li>
+								<li>LESS</li>
+								<li>YUIDoc</li>
+								<li>Uglify</li>
+							</ul>
+						</li>
+					</ul>
 
 					<h4 class="f18">Known Issues and Limitations</h4>
-                    <ul class="padded-ul mb10">
-                        <li>No IE support in this version</li>
-                    </ul>
+					<ul class="padded-ul mb10">
+						<li>No IE support in this version</li>
+					</ul>
+
+				</div>
 
 
-                </div>
+				<!-- Release note: 0.7.3 -->
+				<hr class="my20"/>
+				<h3 class="f20" id="release-0-7-3">0.7.2 Release note</h3>
+				<div class="hd c6">
 
-                <hr class="my20"/>
-            </div>
-        </div>
-    </section>
+					<h4 class="f18">Major Features</h4>
+					<h5 class="f16">Topology</h5>
+					<ul class="padded-ul mb10">
+						<li>Support Firefox (30+)</li>
+						<li>Added extend link & linkSet support</li>
+					</ul>
+
+					<h4 class="f18">Known Issues and Limitations</h4>
+					<ul class="padded-ul mb10">
+						<li>[Core] Temporary don't support IE</li>
+					</ul>
+
+				</div>
+
+
+				<!-- Release note: 0.7.2 -->
+				<hr class="my20"/>
+				<h3 class="f20" id="release-0-7-2">0.7.2 Release note</h3>
+				<div class="hd c6">
+
+					<h4 class="f18">Major Features</h4>
+					<h5 class="f16">Topology</h5>
+					<ul class="padded-ul mb10">
+						<li>Stabilized topology component and fixed 56 bugs</li>
+						<li>Enhanced aggregation feature</li>
+						<li>Improve topology rendering performance</li>
+					</ul>
+
+					<h4 class="f18">Known Issues and Limitations</h4>
+					<ul class="padded-ul mb10">
+						<li>[Topology] Has display issue in firefox</li>
+						<li>[Core] Temporary don't support IE</li>
+					</ul>
+
+				</div>
+
+
+
+				<!-- Release note: 0.6 -->
+				<hr class="my20"/>
+				<h3 class="f20" id="release-0-6">0.6 Release note</h3>
+				<div class="hd c6">
+
+					<h4 class="f18">Major Features</h4>
+					<h5 class="f16">Core</h5>
+					<ul class="padded-ul mb10">
+						<li>Refactored javascript core</li>
+						<li>Integrated Git, Grunt and CI (Continuous Integration)</li>
+						<li>Added multiple data stature</li>
+						<li>Added view animation support</li>
+						<li>Added Dictionary and ObservableDictionary</li>
+						<li>Remove bootstrap components</li>
+					</ul>
+					<h5 class="f16">Topology</h5>
+					<ul class="padded-ul mb10">
+						<li>Refactored and moved to new javascript core</li>
+						<li>Integrated Git, Grunt and CI (Continuous Integration)</li>
+						<li>Improve topology rendering performance</li>
+						<li>Added node and link extendibility support</li>
+						<li>Added layout manager</li>
+						<li>Added multiple group support</li>
+						<li>Add build-in map support</li>
+					</ul>
+
+					<h4 class="f18">Known Issues and Limitations</h4>
+					<ul class="padded-ul mb10">
+						<li>[Topology] Has display issue in firefox</li>
+						<li>[Core] Temporary don't support IE</li>
+					</ul>
+
+				</div>
+
+
+
+				<!-- Release note: 0.5 -->
+				<hr class="my20"/>
+				<h3 class="f20" id="release-0-5">0.5 Release note</h3>
+				<div class="hd c6">
+
+					<h4 class="f18">Major Features</h4>
+					<h5 class="f16">Topology</h5>
+					<ul class="padded-ul mb10">
+						<li>Added node-set support for aggregation (nested topology)</li>
+						<li>Added several new color themes (blue/green/black/navy)</li>
+						<li>Added customized node icon support</li>
+						<li>Added popup info panel for multiple links</li>
+						<li>Added basic touch events support</li>
+						<li>Improved algorithm of labels’ position to avoid occlusion</li>
+						<li>Added hint for link besides node hint</li>
+					</ul>
+
+					<h4 class="f18">Bug Fixes</h4>
+					<ul class="padded-ul mb10">
+						<li>[Core] Fixed memory leak issue in event engine.</li>
+						<li>[Topology] Fixed dragging issue in IE9.</li>
+						<li>[Topology] Fixed problematic behaviors in selecting nodes.</li>
+						<li>[Topology] Fixed memory leak issue when resizing.</li>
+					</ul>
+
+					<h4 class="f18">Known Issues and Limitations</h4>
+					<ul class="padded-ul mb10">
+						<li>Popup’s position may not be correct when displays in corners</li>
+						<li>Accessibility is not completed</li>
+						<li>Thumbnail cannot reflect the correct position of topology</li>
+						<li>Hints may overlap with nodes</li>
+						<li>Some style issues under IE 9.0</li>
+						<li>Zooming issue when node set is expanded</li>
+					</ul>
+
+				</div>
+
+
+				<!-- Release note: 0.4 -->
+				<hr class="my20"/>
+				<h3 class="f20" id="release-0-4">0.4 Release note</h3>
+				<div class="hd c6">
+
+					<h4 class="f18">Major Features</h4>
+					<h5 class="f16">Core</h5>
+					<ul class="padded-ul mb10">
+						<li>Added Vector/Line for easy calculation</li>
+						<li>SetAll/getAll are deprecated and are replaced with gets/sets for easy usage</li>
+						<li>NotifyPropertyChanged/listen are deprecated and are replaced with watch/unwatch/notify due
+							to performance enhancement, easy to use and fixing issue of memory leak
+						</li>
+					</ul>
+					<h5 class="f16">Graphic</h5>
+					<ul class="padded-ul mb10">
+						<li>Graphic module is now using the same view engine and event engine as the UI module</li>
+					</ul>
+
+					<h4 class="f18">Known Issues and Limitations</h4>
+					<ul class="padded-ul mb10">
+						<li>Popup’s position may not be correct when displays in corners</li>
+						<li>Accessibility is not completed</li>
+						<li>Cannot do multi-selection by keyboard</li>
+						<li>Problem when switching between topology’s scenes</li>
+						<li>Cannot use “Full-screen mode” in iframe</li>
+						<li>Dragging is not working in IE9</li>
+					</ul>
+
+				</div>
+
+
+				<!-- Release note: 0.3 -->
+				<hr class="my20"/>
+				<h3 class="f20" id="release-0-3">0.3 Release note</h3>
+				<div class="hd c6">
+
+					<h4 class="f18">Major Features</h4>
+					<h5 class="f16">Topology</h5>
+					<ul class="padded-ul mb10">
+						<li>Zoom by selection support <strong>supported</strong></li>
+						<li>Thumbnail support <strong>added</strong></li>
+						<li>Path/tunnel visualization support <strong>added</strong></li>
+						<li>[Enhanced] Group area support: 3 styles (polygon/rectangle/circle) are supported</li>
+						<li>[Enhanced] Multiple links support: 2 styles (line/curve) are supported</li>
+					</ul>
+
+					<h4 class="f18">Bug Fixes</h4>
+					<ul class="padded-ul mb10">
+						<li>[Topology] Operations are problematical when all nodes are in a line.</li>
+					</ul>
+
+					<h4 class="f18">Known Issues and Limitations</h4>
+					<ul class="padded-ul mb10">
+						<li>Popup’s position may not be correct when displays in corners</li>
+						<li>Accessibility is not completed</li>
+						<li>Cannot do multi-selection by keyboard</li>
+						<li>Problem when switching between topology’s scenes</li>
+						<li>Cannot use “Full-screen mode” in iframe</li>
+						<li>Dragging is not working in IE9</li>
+					</ul>
+
+				</div>
+
+				<!-- Release note: 0.2 -->
+				<hr class="my20"/>
+				<h3 class="f20" id="release-0-2">0.2 Release note</h3>
+				<div class="hd c6">
+					Release note is not available.
+				</div>
+
+				<!-- Release note: 0.1 -->
+				<hr class="my20"/>
+				<h3 class="f20" id="release-0-1">0.1 Release note</h3>
+				<div class="hd c6">
+					<h4 class="f18">Features</h4>
+					<h5 class="f16">Web framework</h5>
+					<ul class="padded-ul mb10">
+						<li>Object oriented development <strong>supported</strong></li>
+						<li>Full customized component support <strong>added</strong></li>
+						<li>Enhanced event engine <strong>added</strong></li>
+						<li>Single Page Application (SPA) support <strong>added</strong></li>
+						<li>Model-View-ViewModel (MVVM) support <strong>added</strong></li>
+					</ul>
+					<h5 class="f16">UI Components</h5>
+					<ul class="padded-ul mb10">
+						<li>Form components: Button, CheckBox, Radio, TextBox, ComboBox</li>
+						<li>Widgets: Tab, Dialog, Tree</li>
+					</ul>
+					<h5 class="f16">Graphic</h5>
+					<ul class="padded-ul mb10">
+						<li>Topology Component
+							<ul class="padded-ul mb10">
+								<li>Basic Topology feature (show topology, zoom, pan, show properties etc.)</li>
+								<li>Auto-layout</li>
+								<li>Smart node & label</li>
+								<li>Scene and layout support</li>
+							</ul>
+						</li>
+					</ul>
+
+					<h4 class="f18">Bug Fixes</h4>
+					<p class="mb10">
+						Initial release
+					</p>
+
+					<h4 class="f18">Known Issues and Limitations</h4>
+					<ul class="padded-ul mb10">
+						<li>Popup’s position may not be correct when displays in corners</li>
+						<li>Accessibility is not completed</li>
+						<li>Demo & Documentation are not complete</li>
+					</ul>
+
+
+				</div>
+
+
+				<hr class="my20"/>
+			</div>
+		</div>
+	</section>
 
 </div>
 
