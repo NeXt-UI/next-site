@@ -47,7 +47,7 @@ gulp.task("clean-fast", function (cb) {
 });
 
 gulp.task("build:examples.html", function(){
-	pyshell.run("codepen-parser/html-generator.py", {
+	pyshell.run("codepen-parser/html_generator.py", {
 		"pythonPath": "/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5"
 	}, function (err) {
 		if (err) throw err;
