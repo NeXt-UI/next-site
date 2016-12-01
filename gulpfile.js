@@ -47,12 +47,14 @@ gulp.task("clean-fast", function (cb) {
 });
 
 gulp.task("build:examples.html", function(){
-	pyshell.run("codepen-parser/html_generator.py", {
-		"pythonPath": "/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5"
-	}, function (err) {
-		if (err) throw err;
-		fs.createReadStream("codepen-parser/examples.html").pipe(fs.createWriteStream("src/examples.html"));
-	});
+	return true;
+	// fixme: uncomment when Codepen allows automatic creation
+	// pyshell.run("codepen-parser/html_generator.py", {
+	// 	"pythonPath": "/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5"
+	// }, function (err) {
+	// 	if (err) throw err;
+	// 	fs.createReadStream("codepen-parser/examples.html").pipe(fs.createWriteStream("src/examples.html"));
+	// });
 });
 
 // build HTML
@@ -138,7 +140,7 @@ gulp.task("simple-watch", function(){
 	// gulp.watch(paths.src(), ["build-fast"])
 	return watch([
 		paths.src(),
-		"!" + paths.src() + "/examples.html"
+		// "!" + paths.src() + "/examples.html"
 	], { ignoreInitial: true }, function(){
 		console.log("Change detected");
 		runSequence("build-fast");
